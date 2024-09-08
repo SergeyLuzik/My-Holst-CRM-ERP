@@ -3,6 +3,7 @@ import { fileURLToPath } from "url";
 import { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
@@ -40,6 +41,9 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
+    }),
+    new webpack.ProvidePlugin({
+      React: "react",
     }),
   ],
   devtool: "inline-source-map",
