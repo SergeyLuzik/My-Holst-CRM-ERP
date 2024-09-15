@@ -4,6 +4,7 @@ export default [
       "eslint:recommended",
       "plugin:react/recommended",
       "htmlacademy/react",
+      "plugin:storybook/recommended",
     ],
   },
   {

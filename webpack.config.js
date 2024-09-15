@@ -35,7 +35,7 @@ export default {
   resolve: {
     extensions: [".jsx", ".js"],
     alias: {
-      src: path.resolve(__dirname, "src"),
+      src: path.resolve(__dirname, "../src"),
     },
   },
   plugins: [
