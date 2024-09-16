@@ -1,0 +1,16 @@
+export const lightTheme = {
+  colorWhite: "#fff",
+  colorBlack: "#374957",
+  colorMain: "#744AD2",
+  colorExtraLiteMain: "#E5EEFF",
+  colorAccent: "#F3349D",
+  colorExtraLiteAccent: "#FFD4E9",
+  colorGrey: "#91A6B7",
+  colorMediumGrey: "#B1C1CE",
+  colorLiteGrey: "#CFDCE6",
+  colorExtraLiteGrey: "#EDF5FD",
+  colorNewBg: "#F2FF5C",
+  colorApproveBg: "#FBB707",
+  colorPrintBg: "#FED2FF",
+  colorDoneBg: "#CBF45D",
+};
