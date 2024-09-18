@@ -1,5 +1,5 @@
 import { Button } from "../styled";
+import { Status } from "../ui/status/Status";
 export const App = () => {
-  return <div>App</div>;
+  return <Status text="Новый" />;
 };
-
