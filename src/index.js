@@ -1,8 +1,8 @@
 import { createRoot } from "react-dom/client";
 
-import App from "./components/App/App.jsx";
+import { App } from "./components/App/App";
 import { ThemeProvider } from "styled-components";
-import { lightTheme } from "./themes/light.js";
+import { lightTheme } from "./themes/light";
 
 const root = createRoot(document.getElementById("root"));
 
