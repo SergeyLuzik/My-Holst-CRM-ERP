@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Nunito from "../../assets/fonts/Nunito-ExtraLight.woff2";
+import Nunito from "../../assets/fonts/Nunito-VariableFont_wght.woff2";
 export const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: "Nunito";
