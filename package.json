@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "webpack -p --mode production",
-    "start": "webpack serve --mode development",
+    "start": "webpack serve --mode development --no-open",
     "eslint": "eslint --ext .jsx --ext .js ./src/",
     "svgr": "svgr --ext=jsx -d ../My-Holst-CRM-ERP/src/components/icons/ src/assets/icons/svg/",
     "csslint": "stylelint './src/**/*.(js|jsx)'",
