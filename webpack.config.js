@@ -22,8 +22,8 @@ export default {
         exclude: /node_modules/,
         use: ["babel-loader"],
         resolve: {
-          fullySpecified: false
-        }
+          fullySpecified: false,
+        },
       },
       {
         test: /\.css$/,
@@ -32,6 +32,13 @@ export default {
       {
         test: /(.png|((?<!.cmp).svg)|.jpg|.gif|.woff|.woff2|.eot|.ttf|.otf)$/,
         use: ["file-loader"],
+      },
+      {
+        test: /\.woff2$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[name][ext]",
+        },
       },
     ],
   },
