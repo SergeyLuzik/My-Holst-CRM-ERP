@@ -1,5 +1,11 @@
 import { Button } from "../styled";
 import { Status } from "../ui/status/Status";
+import { GlobalStyle } from "./styles";
 export const App = () => {
-  return <Status type="done" />;
+  return (
+    <>
+      <GlobalStyle />
+      <Status type="done" />
+    </>
+  );
 };
