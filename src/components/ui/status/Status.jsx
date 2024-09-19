@@ -1,4 +1,4 @@
-import { StyledButton } from "./style";
+import { StyledButton } from "./styles";
 
 export const Status = ({ type }) => {
   const typesText = {
