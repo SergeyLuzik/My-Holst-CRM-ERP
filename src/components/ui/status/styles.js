@@ -10,6 +10,7 @@ const typesColor = {
 };
 export const StyledButton = styled(Button)`
   font-size: 14px;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.black};
   padding-inline: ${({ theme }) => theme.spacings.s};
