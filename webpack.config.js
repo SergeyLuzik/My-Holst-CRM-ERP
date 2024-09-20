@@ -44,10 +44,7 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
-    }),
-    new webpack.ProvidePlugin({
-      React: "react",
-    }),
+    })
   ],
   devtool: "inline-source-map",
   devServer: {
