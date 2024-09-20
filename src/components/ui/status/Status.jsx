@@ -1,5 +1,5 @@
 import { StyledButton } from "./styles";
-
+import React from "react";
 export const Status = ({ type }) => {
   const typesText = {
     new: "новый",
