@@ -1,4 +1,5 @@
 import React from "react";
+import { GlobalStyle } from "../src/components/App/styles";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "../src/themes/light";
 
@@ -7,6 +8,7 @@ const preview = {
   decorators: [
     (Story) => (
       <ThemeProvider theme={lightTheme}>
+        <GlobalStyle />
         <Story />
       </ThemeProvider>
     ),
