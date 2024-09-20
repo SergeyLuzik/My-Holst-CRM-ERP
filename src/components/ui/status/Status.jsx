@@ -1,5 +1,5 @@
-import { StyledButton } from "./styles";
 import React from "react";
+import * as S from "./styles";
 export const Status = ({ type }) => {
   const typesText = {
     new: "новый",
@@ -9,5 +9,5 @@ export const Status = ({ type }) => {
     complete: "завершен",
   };
 
-  return <StyledButton type={type}>{typesText[type]}</StyledButton>;
+  return <S.Status type={type}>{typesText[type]}</S.Status>;
 };

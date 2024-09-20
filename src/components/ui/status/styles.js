@@ -8,7 +8,7 @@ const typesColor = {
   done: "doneBg",
   complete: "extraLiteMain",
 };
-export const StyledButton = styled(Button)`
+export const Status = styled(Button)`
   font-size: 14px;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   text-transform: uppercase;
