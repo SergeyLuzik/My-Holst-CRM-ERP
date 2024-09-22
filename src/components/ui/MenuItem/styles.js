@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "../../styled";
-import icon from "../../../assets/icons/picture.svg";
 
 export const MenuItem = styled(Link)`
   font-size: 20px;
@@ -14,7 +13,7 @@ export const MenuItem = styled(Link)`
     width: 24px;
     height: 24px;
     content: "";
-    mask: url(${icon});
+    mask: url(${({ icon }) => icon});
     background-color: currentColor;
   }
   &:hover {
