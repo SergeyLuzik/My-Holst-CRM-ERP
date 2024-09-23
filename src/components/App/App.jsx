@@ -11,7 +11,7 @@ export const App = () => {
     <>
       <GlobalStyle />
       <Status type="done" />
-      <MenuItem icon={icon} href="#" text="Картины" />
+      <MenuItem icon={icon} href="#" text="Картины" Option={PlusButton} />
       <PlusButton />
     </>
   );

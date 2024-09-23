@@ -1,9 +1,12 @@
 import React from "react";
 import * as S from "./styles";
-export const MenuItem = ({ icon, href, text }) => {
+export const MenuItem = ({ icon, href, text, Option }) => {
   return (
     <S.MenuItem $icon={icon} href={href}>
-      {text}
+      <>
+        {text}
+        {Option()}
+      </>
     </S.MenuItem>
   );
 };
