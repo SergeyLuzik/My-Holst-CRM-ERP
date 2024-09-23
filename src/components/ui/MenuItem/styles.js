@@ -4,6 +4,7 @@ import { Link } from "../../styled";
 export const MenuItem = styled(Link)`
   display: flex;
   gap: ${({ theme }) => theme.spacings.s};
+  align-items: center;
   font-size: 20px;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   color: ${({ theme }) => theme.colors.main};
