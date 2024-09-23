@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link } from "../../styled";
 
 export const MenuItem = styled(Link)`
+  display: flex;
+  gap: ${({ theme }) => theme.spacings.s};
   font-size: 20px;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   color: ${({ theme }) => theme.colors.main};
@@ -13,13 +15,14 @@ export const MenuItem = styled(Link)`
     width: 24px;
     height: 24px;
     content: "";
-    mask: url(${({ icon }) => icon});
+    mask: url(${(props) => props.$icon});
     background-color: currentColor;
   }
   &:hover {
-    color: ${({ theme }) => theme.colors.extraLiteMain};
+    background-color: ${({ theme }) => theme.colors.extraLiteMain};
   }
-  &.active {
+  &:active {
     color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.main};
   }
 `;
