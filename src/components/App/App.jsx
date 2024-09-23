@@ -1,7 +1,7 @@
 import React from "react";
 import { Status } from "../ui/Status/Status";
 import { GlobalStyle } from "./styles";
-import { MenuItem } from "../ui/MenuItem/styles";
+import { MenuItem } from "../ui/MenuItem/MenuItem";
 
 import icon from "../../assets/icons/picture.svg";
 
