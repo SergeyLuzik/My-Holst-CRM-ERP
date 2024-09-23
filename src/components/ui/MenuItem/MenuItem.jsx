@@ -5,7 +5,7 @@ export const MenuItem = ({ icon, href, text, Option }) => {
     <S.MenuItem $icon={icon} href={href}>
       <>
         {text}
-        {Option()}
+        {Option && Option()}
       </>
     </S.MenuItem>
   );
