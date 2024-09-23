@@ -3,12 +3,13 @@ import { PlusButton } from "./PlusButton";
 import picture from "../../../assets/icons/picture.svg";
 
 export default {
-  title: "Пункты меню",
+  title: "Кнопка плюс",
 };
 
 const Template = (args) => <PlusButton {...args} />;
 
-export const Canvas = Template.bind({});
-Canvas.args = {
+export const Plus = Template.bind({});
+
+Plus.args = {
   icon: picture,
 };
