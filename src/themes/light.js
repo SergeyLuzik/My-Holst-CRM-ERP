@@ -36,9 +36,9 @@ export const lightTheme = {
   fontWeights: {
     regular: 400,
     medium: 500,
-    semibold: 600,
+    semiBold: 600,
     bold: 700,
-    extrabold: 800,
+    extraBold: 800,
     black: 900,
   },
 };
