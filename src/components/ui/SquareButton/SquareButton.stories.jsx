@@ -3,13 +3,13 @@ import { SquareButton } from "./SquareButton";
 import picture from "../../../assets/icons/picture.svg";
 
 export default {
-  title: "Квадратная кнопка",
+  title: "Квадратные кнопки",
 };
 
 const Template = (args) => <SquareButton {...args} />;
 
-export const Square = Template.bind({});
+export const Orientation = Template.bind({});
 
-Square.args = {
-  icon: picture,
+Orientation.args = {
+  type: "sort",
 };
