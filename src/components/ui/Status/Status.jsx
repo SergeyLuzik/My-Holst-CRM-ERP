@@ -9,5 +9,5 @@ export const Status = ({ type }) => {
     complete: "завершен",
   };
 
-  return <S.Status type={type}>{typesText[type]}</S.Status>;
+  return <S.Status $type={type}>{typesText[type]}</S.Status>;
 };

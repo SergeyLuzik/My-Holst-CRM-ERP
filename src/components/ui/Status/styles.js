@@ -16,8 +16,8 @@ export const Status = styled(Button)`
   padding-inline: ${({ theme }) => theme.spacings.s};
   padding-block: ${({ theme }) => theme.spacings.xs};
   border-radius: ${({ theme }) => theme.radiuses.m};
-  background-color: ${({ theme, type }) => theme.colors[typesColor[type]]};
+  background-color: ${({ theme, $type }) => theme.colors[typesColor[$type]]};
   &:hover {
-    background-color: ${({ theme, type }) => theme.colors[typesColor[type]]};
+    background-color: ${({ theme, $type }) => theme.colors[typesColor[$type]]};
   }
 `;
