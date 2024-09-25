@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../../styled-tags";
+import { Button } from "../../../styled-tags";
 import { flexCenter } from "../../../style-fragments";
 import icon from "../../../assets/icons/arrow.svg";
 

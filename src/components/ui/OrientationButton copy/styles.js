@@ -9,7 +9,7 @@ export const OrientationButton = styled(Button)`
   ${squareButton}
   &::before {
     width: 16px;
-    height: 16px;
+    height: 12px;
     mask: url(${portrait});
   }
 `;
