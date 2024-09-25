@@ -15,7 +15,7 @@
     "eslint": "eslint --ext .jsx --ext .js ./src/",
     "svgr": "svgr --ext=jsx -d ../My-Holst-CRM-ERP/src/components/icons/ src/assets/icons/svg/",
     "csslint": "stylelint './src/**/*.(js|jsx)'",
-    "sb": "storybook dev -p 6006",
+    "sb": "storybook dev -p 6006 --no-open",
     "build-sb": "storybook build"
   },
   "devDependencies": {
