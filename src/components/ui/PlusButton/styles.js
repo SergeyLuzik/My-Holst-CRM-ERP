@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Button } from "../../styled-tags";
 import { flexCenter } from "../../../style-fragments";
+import icon from "../../../assets/icons/plus.svg";
 
 export const PlusButton = styled(Button)`
   ${flexCenter};
@@ -13,7 +14,7 @@ export const PlusButton = styled(Button)`
     width: 18px;
     height: 18px;
     content: "";
-    mask: url(${(props) => props.$icon});
+    mask: url(${icon});
     background-color: currentColor;
   }
   &:hover {
