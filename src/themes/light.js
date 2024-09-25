@@ -23,6 +23,7 @@ export const lightTheme = {
     l: "16px",
     xl: "20px",
     xxl: "24px",
+    xxxl: "28px",
   },
   radiuses: {
     xs: "4px",
