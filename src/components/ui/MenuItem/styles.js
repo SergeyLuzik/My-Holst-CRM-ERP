@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "../../styled";
+import { Link } from "../../styled-tags";
 
 export const MenuItem = styled(Link)`
   display: flex;

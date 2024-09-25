@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../../styled";
+import { Button } from "../../styled-tags";
 
 const typesColor = {
   new: "newBg",

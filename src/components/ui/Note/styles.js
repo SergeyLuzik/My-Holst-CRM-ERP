@@ -1,7 +1,7 @@
 import styled from "styled-components";
-//import { Input } from "../../styled";
+//import { Input } from "../../styled-tags";
 import icon from "../../../assets/icons/plus.svg";
-import { P } from "../../styled";
+import { P } from "../../styled-tags";
 
 export const NoteWrapper = styled.div`
   display: inline-flex;
