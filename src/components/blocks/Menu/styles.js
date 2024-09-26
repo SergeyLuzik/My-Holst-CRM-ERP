@@ -18,6 +18,7 @@ export const MenuHeader = styled.div`
 
 export const LinksList = styled(Ul)`
   display: flex;
+  flex-direction: column;
   gap: ${({ theme }) => theme.spacings.xxxl};
 `;
 
