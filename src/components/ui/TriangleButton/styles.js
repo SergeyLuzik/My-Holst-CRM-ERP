@@ -5,7 +5,7 @@ import icon from "../../../assets/icons/triangle.svg";
 
 export const TriangleButton = styled(Button)`
   ${flexCenter};
-  padding: ${({ theme }) => theme.spacings.s};
+  padding: ${({ theme }) => theme.spacings.xs};
   color: ${({ theme }) => theme.colors.main};
 
   &::before {
