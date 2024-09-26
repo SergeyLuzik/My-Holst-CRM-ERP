@@ -5,14 +5,14 @@ import icon from "../../../assets/icons/plus.svg";
 
 export const PlusButton = styled(Button)`
   ${flexCenter};
-  padding: ${({ theme }) => theme.spacings.s};
+  padding: ${({ theme }) => theme.spacings.xs};
   border-radius: 50%;
   color: ${({ theme }) => theme.colors.main};
 
   &::before {
     display: block;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     content: "";
     mask: url(${icon});
     background-color: currentColor;
