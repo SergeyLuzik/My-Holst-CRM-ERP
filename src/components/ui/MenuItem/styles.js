@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Link } from "../../../styled-tags";
+import { A } from "../../../styled-tags";
 
-export const MenuItem = styled(Link)`
+export const Link = styled(A)`
   display: flex;
   gap: ${({ theme }) => theme.spacings.s};
   align-items: center;
