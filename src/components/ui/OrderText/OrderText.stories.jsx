@@ -19,3 +19,15 @@ Description.args = {
   text: "Свадебная пара и мама, на фоне буквы, декарация с цветами",
   width: "432px",
 };
+
+export const Style = Template.bind({});
+Style.args = {
+  text: "Сканирование",
+  width: "114px",
+};
+
+export const Package = Template.bind({});
+Package.args = { text: "ШИР ТЕМНО-ЖЕЛТАЯ", width: "170px" };
+
+export const Client = Template.bind({});
+Client.args = { text: "Капуткина Ксения", width: "168px" };

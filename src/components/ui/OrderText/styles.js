@@ -3,6 +3,7 @@ import { Input } from "../../../styled-tags";
 
 export const OrderText = styled(Input)`
   font-size: 14px;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   color: ${({ theme }) => theme.colors.black};
   padding-inline: ${({ theme }) => theme.spacings.s};
   padding-block: ${({ theme }) => theme.spacings.xs};
