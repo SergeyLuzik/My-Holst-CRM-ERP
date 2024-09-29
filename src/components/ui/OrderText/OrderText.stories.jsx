@@ -14,16 +14,16 @@ Size.args = {
   width: "75px",
 };
 
-export const Description = Template.bind({});
-Description.args = {
-  text: "Свадебная пара и мама, на фоне буквы, декарация с цветами",
-  width: "432px",
-};
-
 export const Style = Template.bind({});
 Style.args = {
   text: "Сканирование",
   width: "114px",
+};
+
+export const Description = Template.bind({});
+Description.args = {
+  text: "Свадебная пара и мама, на фоне буквы, декарация с цветами",
+  width: "432px",
 };
 
 export const Package = Template.bind({});
