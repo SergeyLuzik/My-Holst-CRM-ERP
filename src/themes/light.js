@@ -46,3 +46,21 @@ export const lightTheme = {
     button: "0 0 2px rgba(0, 0, 0, 0.25)",
   },
 };
+
+/* todo: ввести поля для размера шрифта (сделать что-то c их кол-вом)
+
+  fontSizes: {
+    xs: "10px",
+    s: "12px",
+    m: "14px",
+    l: "16px",
+    xl: "18px",
+    xxl: "20px",
+    xxxl: "24px",
+    xxxxl: "28px",
+    xxxxxl: "32px",
+    xxxxxxl: "40px",
+    xxxxxxxl: "48px",
+  },
+
+*/
