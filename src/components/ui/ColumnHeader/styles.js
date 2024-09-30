@@ -1,7 +1,7 @@
 import { Button } from "../../../styled-tags";
 import styled from "styled-components";
 
-export const TableHeader = styled(Button)`
+export const ColumnHeader = styled(Button)`
   display: flex;
   gap: ${({ theme }) => theme.spacings.s};
   align-items: center;

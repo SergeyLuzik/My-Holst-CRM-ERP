@@ -1,11 +1,11 @@
 import React from "react";
-import { TableHeader } from "./TableHeader";
+import { ColumnHeader } from "./ColumnHeader";
 
 export default {
   title: "Заголовки строк",
 };
 
-const Template = (args) => <TableHeader {...args} />;
+const Template = (args) => <ColumnHeader {...args} />;
 
 export const Status = Template.bind();
 Status.args = {
