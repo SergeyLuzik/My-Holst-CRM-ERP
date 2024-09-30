@@ -4,8 +4,8 @@ import textSortIcon from "../../../assets/icons/textSort.svg";
 import numberSortIcon from "../../../assets/icons/numberSort.svg";
 
 const modeIcons = {
-  text: textSortIcon,
-  number: numberSortIcon,
+  text: { icon: textSortIcon, width: 12, height: 15 },
+  number: { icon: numberSortIcon, width: 16, height: 12 },
 };
 
 export const ColumnHeader = styled(Button)`
@@ -20,16 +20,17 @@ export const ColumnHeader = styled(Button)`
   &:hover {
     cursor: pointer;
   }
-  ${({ $type, $mode }) =>
+  ${({ theme, $type, $mode, active }) =>
     $type &&
     `
     &::after {
       display: block;
       content: "";
-      width: 12px;
-      height: 12px;
-      mask: url(${modeIcons[$mode]});
-      background-color: currentColor;
+      width: ${modeIcons[$mode].width}px;
+      height: ${modeIcons[$mode].height}px;
+      mask: url(${modeIcons[$mode].icon});
+      background-color: ${active === true ? "currentColor" : theme.colors.grey};
+      };
     }
   `}
 `;

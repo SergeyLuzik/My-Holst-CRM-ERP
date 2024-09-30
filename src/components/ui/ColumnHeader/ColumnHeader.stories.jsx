@@ -13,3 +13,11 @@ Status.args = {
   type: "sortable",
   mode: "text",
 };
+
+export const Active = Template.bind();
+Active.args = {
+  text: "Статус",
+  type: "sortable",
+  mode: "text",
+  active: true,
+};
