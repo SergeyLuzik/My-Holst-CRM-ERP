@@ -1,5 +1,12 @@
 import { Button } from "../../../styled-tags";
 import styled from "styled-components";
+import textSortIcon from "../../../assets/icons/textSort.svg";
+import numberSortIcon from "../../../assets/icons/numberSort.svg";
+
+const modeIcons = {
+  text: textSortIcon,
+  number: numberSortIcon,
+};
 
 export const ColumnHeader = styled(Button)`
   display: flex;
@@ -13,4 +20,16 @@ export const ColumnHeader = styled(Button)`
   &:hover {
     cursor: pointer;
   }
+  ${({ $type, $mode }) =>
+    $type &&
+    `
+    &::after {
+      display: block;
+      content: "";
+      width: 12px;
+      height: 12px;
+      mask: url(${modeIcons[$mode]});
+      background-color: currentColor;
+    }
+  `}
 `;
