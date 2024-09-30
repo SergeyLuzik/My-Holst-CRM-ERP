@@ -1,20 +1,24 @@
 import React from "react";
-import { Status } from "../ui/Status/Status";
 import { GlobalStyle } from "./styles";
-import { MenuItem } from "../ui/MenuItem/MenuItem";
 
-import icon from "../../assets/icons/picture.svg";
-import { PlusButton } from "../ui/PlusButton/PlusButton";
-import { Note } from "../ui/Note/Note";
+import * as S from "./styles";
+import { Menu } from "../blocks/Menu/Menu";
+import { SearchOrderButton } from "../ui/SearchOrderButton/SearchOrderButton";
+import { AdditionalControls } from "../blocks/AdditionalControls/AdditionalControls";
+import { DaysRange } from "../blocks/DaysRange/DaysRange";
+import { Orders } from "../blocks/Orders/Orders";
 
-export const App = () => {
-  return (
-    <>
-      <GlobalStyle />
-      <Status type="done" />
-      <MenuItem icon={icon} href="#" text="Картины" Option={PlusButton} />
-      <PlusButton />
-      <Note text="Текст заметки" />
-    </>
-  );
-};
+export const App = () => (
+  <S.App>
+    <GlobalStyle />
+    <Menu />
+    <S.Content>
+      <S.HeaderButtons>
+        <SearchOrderButton />
+        <AdditionalControls />
+      </S.HeaderButtons>
+      <DaysRange />
+      <Orders />
+    </S.Content>
+  </S.App>
+);
