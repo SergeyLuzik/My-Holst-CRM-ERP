@@ -7,6 +7,7 @@ import { SearchOrderButton } from "../ui/SearchOrderButton/SearchOrderButton";
 import { AdditionalControls } from "../blocks/AdditionalControls/AdditionalControls";
 import { DaysRange } from "../blocks/DaysRange/DaysRange";
 import { Orders } from "../blocks/Orders/Orders";
+import { ColumnHeaders } from "../blocks/ColumnHeaders/ColumnHeaders";
 
 export const App = () => (
   <S.App>
@@ -18,6 +19,7 @@ export const App = () => (
         <AdditionalControls />
       </S.HeaderButtons>
       <DaysRange />
+      <ColumnHeaders />
       <Orders />
     </S.Content>
   </S.App>
