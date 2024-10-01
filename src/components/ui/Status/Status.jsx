@@ -9,5 +9,26 @@ export const Status = ({ type }) => {
     complete: "завершен",
   };
 
-  return <S.Status $type={type}>{typesText[type]}</S.Status>;
+  const types = ["new", "approve", "printed", "done", "complete"];
+
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const handlePlaceholderClick = () => setIsOpen(!isOpen);
+
+  return (
+    <S.StatusWrapper>
+      <S.Status $type={type} onClick={handlePlaceholderClick}>
+        {typesText[type]}
+      </S.Status>
+      {isOpen && (
+        <S.DropDown>
+          {types.map((type) => (
+            <S.Status $type={type} onClick={handlePlaceholderClick}>
+              {typesText[type]}
+            </S.Status>
+          ))}
+        </S.DropDown>
+      )}
+    </S.StatusWrapper>
+  );
 };

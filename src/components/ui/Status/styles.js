@@ -21,3 +21,20 @@ export const Status = styled(Button)`
     background-color: ${({ theme, $type }) => theme.colors[typesColor[$type]]};
   }
 `;
+
+export const StatusWrapper = styled.div`
+  position: relative;
+`;
+
+export const DropDown = styled.div`
+  position: absolute;
+  display: grid;
+  gap: 8px;
+  top: 0;
+  right: 0;
+  background-color: ${({ theme }) => theme.colors.white};
+  border-radius: ${({ theme }) => theme.radiuses.m};
+  box-shadow: ${({ theme }) => theme.shadows.button};
+  padding: ${({ theme }) => theme.spacings.s};
+  z-index: 1;
+`;
