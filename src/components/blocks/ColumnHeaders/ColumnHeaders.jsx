@@ -5,7 +5,7 @@ import { ColumnHeader } from "../../ui/ColumnHeader/ColumnHeader";
 
 export const ColumnHeaders = () => (
   <S.List>
-    <S.Item $width="auto">
+    <S.Item $width="106px">
       <ColumnHeader text="Статус" type="sortable" mode="text" />
     </S.Item>
     <S.Item $width="75px">
@@ -19,6 +19,9 @@ export const ColumnHeaders = () => (
     </S.Item>
     <S.Item $width="170px">
       <ColumnHeader text="Упаковка" type="sortable" mode="text" />
+    </S.Item>
+    <S.Item $width="282px">
+      <ColumnHeader text="Дополнительно" />
     </S.Item>
     <S.Item $width="168px">
       <ColumnHeader text="Клиент" type="sortable" mode="text" />
