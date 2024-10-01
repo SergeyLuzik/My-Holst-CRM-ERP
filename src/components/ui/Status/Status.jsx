@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./styles";
+import { Popup } from "../../ui/Popup/Popup";
 export const Status = ({ type }) => {
   const typesText = {
     new: "новый",
@@ -21,13 +22,13 @@ export const Status = ({ type }) => {
         {typesText[type]}
       </S.Status>
       {isOpen && (
-        <S.DropDown>
+        <Popup>
           {types.map((type) => (
             <S.Status $type={type} onClick={handlePlaceholderClick}>
               {typesText[type]}
             </S.Status>
           ))}
-        </S.DropDown>
+        </Popup>
       )}
     </S.StatusWrapper>
   );
