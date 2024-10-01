@@ -6,4 +6,5 @@ export const Orders = styled(Ul)`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacings.m};
+  overflow-y: auto;
 `;
