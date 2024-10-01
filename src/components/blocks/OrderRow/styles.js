@@ -9,5 +9,4 @@ export const OrderRow = styled(Li)`
   padding-block: ${({ theme }) => theme.spacings.s};
   border-radius: ${({ theme }) => theme.radiuses.l};
   background-color: ${({ theme }) => theme.colors.white};
-  box-shadow: ${({ theme }) => theme.shadows.button};
 `;

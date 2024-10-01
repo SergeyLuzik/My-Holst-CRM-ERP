@@ -11,7 +11,6 @@ export const Menu = styled.nav`
   padding: ${({ theme }) => theme.spacings.xxl};
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: ${({ theme }) => theme.radiuses.xxl};
-  box-shadow: ${({ theme }) => theme.shadows.button};
 `;
 
 export const MenuHeader = styled.div`
