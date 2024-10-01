@@ -29,6 +29,7 @@ button {
 export const App = styled.div`
   display: grid;
   grid-template-columns: min-content 1fr;
+  grid-template-rows: 100%;
   gap: ${({ theme }) => theme.spacings.l};
   width: 100vw;
   height: 100vh;
