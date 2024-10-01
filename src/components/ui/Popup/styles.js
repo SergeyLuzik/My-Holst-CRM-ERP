@@ -2,6 +2,8 @@ import styled from "styled-components";
 import icon from "../../../assets/icons/pin.svg";
 
 export const Popup = styled.div`
+position: absolute;
+z-index: 1;
 display: inline-flex;
 flex-direction: column;
 align-items: center;
