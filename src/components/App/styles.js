@@ -48,3 +48,10 @@ export const HeaderButtons = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
+export const Table = styled.div`
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.spacings.m};
+`;

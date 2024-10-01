@@ -19,8 +19,10 @@ export const App = () => (
         <AdditionalControls />
       </S.HeaderButtons>
       <DaysRange />
-      <ColumnHeaders />
-      <Orders />
+      <S.Table>
+        <ColumnHeaders />
+        <Orders />
+      </S.Table>
     </S.Content>
   </S.App>
 );
