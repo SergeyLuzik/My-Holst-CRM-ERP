@@ -9,7 +9,9 @@ import { TimeTag } from "../../ui/TimeTag/TimeTag";
 
 export const OrderRow = () => (
   <S.OrderRow>
-    <Status type="new" />
+    <S.StatusWrapper $width="106px">
+      <Status type="new" />
+    </S.StatusWrapper>
     <OrderText text="100x100" width="75px" />
     <OrderText text="Сканирование" width="114px" />
     <OrderText
