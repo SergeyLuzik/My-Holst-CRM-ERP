@@ -39,8 +39,7 @@ export const App = styled.div`
 `;
 
 export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: ${({ theme }) => theme.spacings.xl};
 `;
 
