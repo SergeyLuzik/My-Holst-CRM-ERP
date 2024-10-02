@@ -18,6 +18,7 @@ export const Pin = styled.div`
   height: 9px;
   mask: url(${icon});
   background-color: ${({ theme }) => theme.colors.white};
+  margin-bottom: -1px;
 `;
 
 export const Content = styled.div`
