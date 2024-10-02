@@ -2,23 +2,26 @@ import styled from "styled-components";
 import icon from "../../../assets/icons/pin.svg";
 
 export const Popup = styled.div`
-position: absolute;
-z-index: 1;
-display: inline-flex;
-flex-direction: column;
-align-items: center;
-filter: drop-shadow(${({ theme }) => theme.shadows.pin});
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 1000;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(${({ theme }) => theme.shadows.pin});
 `;
 
 export const Pin = styled.div`
-width: 37px;
-height: 9px;
-mask: url(${icon});
-background-color: ${({ theme }) => theme.colors.white};
-`
+  width: 37px;
+  height: 9px;
+  mask: url(${icon});
+  background-color: ${({ theme }) => theme.colors.white};
+`;
 
 export const Content = styled.div`
-display: inline-block;
+  display: inline-block;
   position: relative;
   padding: ${({ theme }) => theme.spacings.l};
   border-radius: ${({ theme }) => theme.radiuses.l};
