@@ -1,16 +1,16 @@
 import React from "react";
 import * as S from "./styles";
-import { Status } from "../../ui/Status/Status";
 import { OrderText } from "../../ui/OrderText/OrderText";
 import { PayableAmount } from "../../ui/PayableAmount/PayableAmount";
 import { Tags } from "../Tags/Tags";
 import { TextTag } from "../../ui/TextTag/TextTag";
 import { TimeTag } from "../../ui/TimeTag/TimeTag";
+import { StatusSelect } from "../StatusSelect/StatusSelect";
 
 export const OrderRow = () => (
   <S.OrderRow>
     <S.StatusWrapper $width="106px">
-      <Status type="new" />
+      <StatusSelect initialStatus="new" />
     </S.StatusWrapper>
     <OrderText text="100x100" width="75px" />
     <OrderText text="Сканирование" width="114px" />
