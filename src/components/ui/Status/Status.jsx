@@ -31,19 +31,23 @@ export const Status = ({ type }) => {
   };
 
   return (
-    <S.StatusWrapper>
-      <S.Status $type={type} onClick={handlePlaceholderClick}>
-        {typesText[type]}
+    <>
+      <S.Status
+        $type={statusValue}
+        onClick={handlePlaceholderClick}
+        ref={statusRef}
+      >
+        {typesText[statusValue]}
       </S.Status>
       {isOpen && (
-        <Popup>
+        <Popup top={top} left={left}>
           {types.map((type) => (
-            <S.Status $type={type} onClick={handlePlaceholderClick}>
+            <S.Status $type={type} onClick={() => handlePopupClick(type)}>
               {typesText[type]}
             </S.Status>
           ))}
         </Popup>
       )}
-    </S.StatusWrapper>
+    </>
   );
 };
