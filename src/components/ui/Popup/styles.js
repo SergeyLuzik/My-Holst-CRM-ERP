@@ -23,7 +23,6 @@ export const Pin = styled.div`
 
 export const Content = styled.div`
   display: inline-block;
-  position: relative;
   padding: ${({ theme }) => theme.spacings.l};
   border-radius: ${({ theme }) => theme.radiuses.l};
   background-color: ${({ theme }) => theme.colors.white};
