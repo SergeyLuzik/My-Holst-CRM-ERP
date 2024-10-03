@@ -22,10 +22,6 @@ export const Status = styled(Button)`
   }
 `;
 
-export const StatusWrapper = styled.div`
-  position: relative;
-`;
-
 export const DropDown = styled.div`
   position: absolute;
   display: grid;
