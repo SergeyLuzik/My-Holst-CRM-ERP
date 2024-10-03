@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import * as S from "./styles";
 import { Popup } from "../../ui/Popup/Popup";
 export const Status = ({ type }) => {
@@ -12,9 +12,23 @@ export const Status = ({ type }) => {
 
   const types = ["new", "approve", "printed", "done", "complete"];
 
-  const [isOpen, setIsOpen] = React.useState(false);
+  const statusRef = useRef(null);
+  const [statusValue, setStatusValue] = useState(type);
+  const [isOpen, setIsOpen] = useState(false);
+  const [top, setTop] = useState(0);
+  const [left, setLeft] = useState(0);
 
-  const handlePlaceholderClick = () => setIsOpen(!isOpen);
+  const handlePlaceholderClick = () => {
+    const boundingRect = statusRef.current.getBoundingClientRect();
+    setTop(boundingRect.bottom);
+    setLeft(boundingRect.left + boundingRect.width / 2);
+    setIsOpen(!isOpen);
+  };
+
+  const handlePopupClick = (type) => {
+    setIsOpen(!isOpen);
+    setStatusValue(type);
+  };
 
   return (
     <S.StatusWrapper>

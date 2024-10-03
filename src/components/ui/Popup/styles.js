@@ -2,9 +2,9 @@ import styled from "styled-components";
 import icon from "../../../assets/icons/pin.svg";
 
 export const Popup = styled.div`
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: ${({ $top }) => $top}px;
+  left: ${({ $left }) => $left}px;
+  transform: translate(-50%);
   position: absolute;
   z-index: 1000;
   display: inline-flex;

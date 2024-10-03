@@ -1,8 +1,8 @@
 import React from "react";
 import * as S from "./styles";
-export const Popup = ({ children }) => (
-  <S.Popup>
-    <S.Pin/>
+export const Popup = ({ top, left, children }) => (
+  <S.Popup $top={top} $left={left}>
+    <S.Pin />
     <S.Content>{children}</S.Content>
   </S.Popup>
 );
