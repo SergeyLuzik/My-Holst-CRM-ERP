@@ -8,8 +8,11 @@ import { AdditionalControls } from "../blocks/AdditionalControls/AdditionalContr
 import { DaysRange } from "../blocks/DaysRange/DaysRange";
 import { Orders } from "../blocks/Orders/Orders";
 import { ColumnHeaders } from "../blocks/ColumnHeaders/ColumnHeaders";
+import SelectApp from "../CustomSelect/SelectApp";
 
-export const App = () => (
+export const App = () => <SelectApp />;
+
+/*
   <S.App>
     <GlobalStyle />
     <Menu />
@@ -25,4 +28,4 @@ export const App = () => (
       </S.Table>
     </S.Content>
   </S.App>
-);
+ */
