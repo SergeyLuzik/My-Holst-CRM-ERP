@@ -8,6 +8,10 @@ const TYPES_TEXT = {
   done: "готов",
   complete: "завершен",
 };
-export const Status = ({ type }) => {
-  return <S.Status $type={type}>{TYPES_TEXT[type]}</S.Status>;
+export const Status = ({ type, onClick }) => {
+  return (
+    <S.Status $type={type} onClick={onClick}>
+      {TYPES_TEXT[type]}
+    </S.Status>
+  );
 };
