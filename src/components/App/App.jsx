@@ -9,8 +9,20 @@ import { DaysRange } from "../blocks/DaysRange/DaysRange";
 import { Orders } from "../blocks/Orders/Orders";
 import { ColumnHeaders } from "../blocks/ColumnHeaders/ColumnHeaders";
 import SelectApp from "../CustomSelect/SelectApp";
+import { UniversalSelect } from "../UniversalSelect";
+import { Status } from "../ui/Status/Status";
+import { StatusOptions } from "../blocks/StatusOptions";
 
-export const App = () => <SelectApp />;
+export const App = () => (
+  <>
+    <SelectApp />
+    <UniversalSelect
+      Trigger={Status}
+      triggerProps={{ type: "new" }}
+      Dropdown={StatusOptions}
+    />
+  </>
+);
 
 /*
   <S.App>
