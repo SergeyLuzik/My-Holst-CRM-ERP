@@ -9,19 +9,23 @@ export const DaysRange = ({ children }) => {
   const daysRef = useRef(null);
   const [daysPosition, setDaysPosition] = useState(0);
   const handleDaysScroll = (e) => {
-    //setDaysPosition(e.target);
-    console.log(e);
+    setDaysPosition((prev) => prev + e.deltaX);
   };
   return (
     <S.DaysRange>
       <MonthSelect />
-      <S.DaysList onWheel={handleDaysScroll}>
-        {days.map(({ day, type }) => (
-          <S.Day key={day}>
-            <Day day={day} type={type} />
-          </S.Day>
-        ))}
-      </S.DaysList>
+      <S.DaysWrapper>
+        <S.DaysList
+          onWheel={handleDaysScroll}
+          style={{ transform: `translateX(${daysPosition}px)` }}
+        >
+          {days.map(({ day, type }) => (
+            <S.Day key={day}>
+              <Day day={day} type={type} />
+            </S.Day>
+          ))}
+        </S.DaysList>
+      </S.DaysWrapper>
     </S.DaysRange>
   );
 };

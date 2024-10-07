@@ -13,6 +13,10 @@ export const DaysRange = styled.div`
   overflow-x: hidden;
 `;
 
+export const DaysWrapper = styled.div`
+  overflow-x: hidden;
+`;
+
 export const DaysList = styled(Ul)`
   display: flex;
   gap: ${({ theme }) => theme.spacings.m};
