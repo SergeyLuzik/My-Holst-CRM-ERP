@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Li } from "../../../styled-tags";
 
-export const OrderRow = styled(Li)`
+export const Order = styled(Li)`
   display: flex;
   align-items: center;
   gap: ${({ theme }) => theme.spacings.m};

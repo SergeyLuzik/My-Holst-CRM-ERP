@@ -7,10 +7,10 @@ import { TextTag } from "../../ui/TextTag/TextTag";
 import { TimeTag } from "../../ui/TimeTag/TimeTag";
 import { Select } from "../../ui/Select";
 import { Status } from "../../ui/Status/Status";
-import { StatusOptions } from "../../blocks/StatusOptions";
+import { StatusOptions } from "../StatusOptions";
 
-export const OrderRow = () => (
-  <S.OrderRow>
+export const Order = () => (
+  <S.Order>
     <OrderItem width="106px">
       <Select
         Trigger={Status}
@@ -32,5 +32,5 @@ export const OrderRow = () => (
     </Tags>
     <OrderItem width="168px">{"Капуткина Ксения"}</OrderItem>
     <PayableAmount text="11 050 ₽" width="74px" />
-  </S.OrderRow>
+  </S.Order>
 );

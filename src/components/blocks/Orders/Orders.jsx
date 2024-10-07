@@ -1,18 +1,18 @@
 import React from "react";
 import * as S from "./styles";
-import { OrderRow } from "../OrderRow/OrderRow";
+import { Order } from "../Order/Order";
 
 export const Orders = () => (
   <S.Orders>
-    <OrderRow />
-    <OrderRow />
-    <OrderRow />
-    <OrderRow />
-    <OrderRow />
-    <OrderRow />
-    <OrderRow />
-    <OrderRow />
-    <OrderRow />
-    <OrderRow />
+    <Order />
+    <Order />
+    <Order />
+    <Order />
+    <Order />
+    <Order />
+    <Order />
+    <Order />
+    <Order />
+    <Order />
   </S.Orders>
 );
