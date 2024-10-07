@@ -10,7 +10,3 @@ export const OrderRow = styled(Li)`
   border-radius: ${({ theme }) => theme.radiuses.l};
   background-color: ${({ theme }) => theme.colors.white};
 `;
-
-export const StatusWrapper = styled.div`
-  width: ${({ $width }) => $width};
-`;
