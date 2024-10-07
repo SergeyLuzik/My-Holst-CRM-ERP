@@ -1,11 +1,11 @@
 import React from "react";
-import { OrderText } from "./OrderText";
+import { OrderItem } from "./OrderItem";
 
 export default {
   title: "Текст заказа",
 };
 
-const Template = (args) => <OrderText {...args} />;
+const Template = (args) => <OrderItem {...args} />;
 
 export const Size = Template.bind({});
 
