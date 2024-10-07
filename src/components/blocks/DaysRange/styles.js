@@ -10,7 +10,6 @@ export const DaysRange = styled.div`
   gap: ${({ theme }) => theme.spacings.l};
   padding: ${({ theme }) => theme.spacings.s};
   width: 100%;
-  overflow-x: hidden;
 `;
 
 export const DaysWrapper = styled.div`
