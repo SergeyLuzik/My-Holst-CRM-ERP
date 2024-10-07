@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { App } from "./components/App/App";
+import { App } from "./components/App";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./themes/light";
 
