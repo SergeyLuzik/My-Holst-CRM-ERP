@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import * as S from "./styles";
-export const UniversalSelect = ({ Trigger, triggerProps, Dropdown }) => {
+export const Select = ({ Trigger, triggerProps, Dropdown }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [triggerValue, setTriggerValue] = useState(triggerProps);
   const [top, setTop] = useState(0);
@@ -19,11 +19,11 @@ export const UniversalSelect = ({ Trigger, triggerProps, Dropdown }) => {
   };
 
   return (
-    <S.UniversalSelect ref={triggerRef}>
+    <S.Select ref={triggerRef}>
       <Trigger onClick={handleTriggerClick} {...triggerValue} />
       {isOpen && (
         <Dropdown top={top} left={left} onOptionClick={handleOptionClick} />
       )}
-    </S.UniversalSelect>
+    </S.Select>
   );
 };
