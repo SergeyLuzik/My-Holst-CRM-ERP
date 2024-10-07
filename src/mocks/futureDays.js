@@ -1,4 +1,4 @@
-export const days = [
+export const futureDays = [
   { day: "Вторник, 31 июля", type: "past" },
   { day: "Среда, 1 августа", type: "past" },
   { day: "Четверг, 2 августа", type: "past" },
