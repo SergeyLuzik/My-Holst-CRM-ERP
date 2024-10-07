@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Ul } from "../../../styled-tags";
+import { Li, Ul } from "../../../styled-tags";
 
-export const DaysRange = styled(Ul)`
+export const DaysRange = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: ${({ theme }) => theme.radiuses.xl};
@@ -9,4 +9,13 @@ export const DaysRange = styled(Ul)`
   padding: ${({ theme }) => theme.spacings.s};
   width: 100%;
   overflow: hidden;
+`;
+
+export const DaysList = styled(Ul)`
+  display: flex;
+  gap: ${({ theme }) => theme.spacings.m};
+`;
+
+export const Day = styled(Li)`
+  display: block;
 `;
