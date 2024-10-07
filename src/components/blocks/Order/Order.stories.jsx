@@ -5,4 +5,4 @@ export default {
   title: "Blocks",
 };
 
-export const Order = () => <Order />;
+export const order = () => <Order />;
