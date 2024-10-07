@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-import { Order } from "../Order/Order";
+import { Order } from "../Order";
 
 export const Orders = () => (
   <S.Orders>

@@ -1,16 +1,16 @@
 import React from "react";
 import * as S from "./styles";
-import { OrderItem } from "../../ui/OrderItem/OrderItem";
-import { PayableAmount } from "../../ui/PayableAmount/PayableAmount";
-import { Tags } from "../Tags/Tags";
-import { TextTag } from "../../ui/TextTag/TextTag";
-import { TimeTag } from "../../ui/TimeTag/TimeTag";
+import { OrderItem } from "../../ui/OrderItem";
+import { PayableAmount } from "../../ui/PayableAmount";
+import { Tags } from "../Tags";
+import { TextTag } from "../../ui/TextTag";
+import { TimeTag } from "../../ui/TimeTag";
 import { Select } from "../../ui/Select";
-import { Status } from "../../ui/Status/Status";
-import { StatusOptions } from "../StatusOptions";
+import { Status } from "../../ui/Status";
+import { StatusOptions } from "../../blocks/StatusOptions";
 
-export const Order = () => (
-  <S.Order>
+export const OrderRow = () => (
+  <S.OrderRow>
     <OrderItem width="106px">
       <Select
         Trigger={Status}
@@ -32,5 +32,5 @@ export const Order = () => (
     </Tags>
     <OrderItem width="168px">{"Капуткина Ксения"}</OrderItem>
     <PayableAmount text="11 050 ₽" width="74px" />
-  </S.Order>
+  </S.OrderRow>
 );

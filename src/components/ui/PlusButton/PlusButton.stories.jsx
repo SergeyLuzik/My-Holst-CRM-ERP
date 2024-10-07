@@ -1,5 +1,5 @@
 import React from "react";
-import { PlusButton } from "./PlusButton";
+import { PlusButton } from ".";
 
 export default {
   title: "Кнопка плюс",

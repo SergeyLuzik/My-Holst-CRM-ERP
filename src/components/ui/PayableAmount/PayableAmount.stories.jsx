@@ -1,5 +1,5 @@
 import React from "react";
-import { PayableAmount } from "./PayableAmount";
+import { PayableAmount } from ".";
 
 export default {
   title: "Текст заказа",

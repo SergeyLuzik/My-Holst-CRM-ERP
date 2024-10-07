@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Orders } from "./Orders";
+import { Orders } from ".";
 
 export default {
   title: "Blocks",

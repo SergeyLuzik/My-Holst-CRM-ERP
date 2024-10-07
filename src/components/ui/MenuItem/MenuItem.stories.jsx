@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuItem } from "./MenuItem";
+import { MenuItem } from ".";
 import picture from "../../../assets/icons/picture.svg";
 
 export default {

@@ -1,5 +1,5 @@
 import React from "react";
-import { SqueezeButton } from "./SqueezeButton";
+import { SqueezeButton } from ".";
 
 export default {
   title: "Кнопка сворачивания меню",

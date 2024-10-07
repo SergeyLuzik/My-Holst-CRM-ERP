@@ -1,5 +1,5 @@
 import React from "react";
-import { TextTag } from "./TextTag";
+import { TextTag } from ".";
 export default { title: "Теги" };
 
 const Template = (args) => <TextTag {...args} />;

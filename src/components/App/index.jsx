@@ -2,12 +2,12 @@ import React from "react";
 import { GlobalStyle } from "./styles";
 
 import * as S from "./styles";
-import { Menu } from "../blocks/Menu/Menu";
-import { SearchOrderButton } from "../ui/SearchOrderButton/SearchOrderButton";
-import { AdditionalControls } from "../blocks/AdditionalControls/AdditionalControls";
-import { DaysRange } from "../blocks/DaysRange/DaysRange";
-import { Orders } from "../blocks/Orders/Orders";
-import { ColumnHeaders } from "../blocks/ColumnHeaders/ColumnHeaders";
+import { Menu } from "../blocks/Menu";
+import { SearchOrderButton } from "../ui/SearchOrderButton";
+import { AdditionalControls } from "../blocks/AdditionalControls";
+import { DaysRange } from "../blocks/DaysRange";
+import { Orders } from "../blocks/Orders";
+import { ColumnHeaders } from "../blocks/ColumnHeaders";
 
 export const App = () => (
   <S.App>

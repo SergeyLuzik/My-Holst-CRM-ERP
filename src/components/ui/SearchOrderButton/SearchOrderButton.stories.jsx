@@ -1,5 +1,5 @@
 import React from "react";
-import { SearchOrderButton } from "./SearchOrderButton";
+import { SearchOrderButton } from ".";
 
 export default {
   title: "Поиск заказа",

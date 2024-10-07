@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./styles";
-import { Day } from "../../ui/Day/Day";
-import { MonthSelect } from "../../ui/MonthSelect/MonthSelect";
+import { Day } from "../../ui/Day";
+import { MonthSelect } from "../../ui/MonthSelect";
 
 export const DaysRange = ({ children }) => (
   <S.DaysRange>

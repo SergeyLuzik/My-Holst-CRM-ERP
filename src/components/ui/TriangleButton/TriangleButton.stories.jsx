@@ -1,5 +1,5 @@
 import React from "react";
-import { TriangleButton } from "./TriangleButton";
+import { TriangleButton } from ".";
 
 export default {
   title: "Кнопка с треугольником",

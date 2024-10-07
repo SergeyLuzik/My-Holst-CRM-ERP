@@ -1,6 +1,6 @@
 import React from "react";
-import { Status } from "../../ui/Status/Status";
-import { Popup } from "../../ui/Popup/Popup";
+import { Status } from "../../ui/Status";
+import { Popup } from "../../ui/Popup";
 
 import * as S from "./styles";
 

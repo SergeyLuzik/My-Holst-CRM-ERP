@@ -1,8 +1,8 @@
 import React from "react";
 
 import * as S from "./styles";
-import { FilterButton } from "../../ui/FilterButton/FilterButton";
-import { YearSelect } from "../../ui/YearSelect/YearSelect";
+import { FilterButton } from "../../ui/FilterButton";
+import { YearSelect } from "../../ui/YearSelect";
 
 export const AdditionalControls = () => (
   <S.AdditionalControls>

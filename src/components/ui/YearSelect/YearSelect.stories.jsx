@@ -1,5 +1,5 @@
 import React from "react";
-import { YearSelect } from "./YearSelect";
+import { YearSelect } from ".";
 
 export default {
   title: "Выбор года",

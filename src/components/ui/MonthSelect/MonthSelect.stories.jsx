@@ -1,5 +1,5 @@
 import React from "react";
-import { MonthSelect } from "./MonthSelect";
+import { MonthSelect } from ".";
 
 export default {
   title: "Выбор месяца",

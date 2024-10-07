@@ -1,7 +1,7 @@
 import React from "react";
 
 import * as S from "./styles";
-import { ColumnHeader } from "../../ui/ColumnHeader/ColumnHeader";
+import { ColumnHeader } from "../../ui/ColumnHeader";
 
 export const ColumnHeaders = () => (
   <S.List>

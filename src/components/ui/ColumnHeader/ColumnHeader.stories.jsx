@@ -1,5 +1,5 @@
 import React from "react";
-import { ColumnHeader } from "./ColumnHeader";
+import { ColumnHeader } from ".";
 
 export default {
   title: "Заголовки строк",

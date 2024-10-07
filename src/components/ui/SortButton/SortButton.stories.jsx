@@ -1,5 +1,5 @@
 import React from "react";
-import { SortButton } from "./SortButton";
+import { SortButton } from ".";
 
 export default {
   title: "Кнопка сортировки",

@@ -1,5 +1,5 @@
 import React from "react";
-import { ColumnHeaders } from "./ColumnHeaders";
+import { ColumnHeaders } from ".";
 
 export default {
   title: "Blocks",

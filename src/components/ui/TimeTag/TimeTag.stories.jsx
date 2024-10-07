@@ -1,5 +1,5 @@
 import React from "react";
-import { TimeTag } from "./TimeTag";
+import { TimeTag } from ".";
 export default { title: "Теги" };
 
 const Template = (args) => <TimeTag {...args} />;

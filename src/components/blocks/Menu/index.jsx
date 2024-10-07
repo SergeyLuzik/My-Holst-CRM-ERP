@@ -1,8 +1,8 @@
 import React from "react";
 import * as S from "./styles";
 import { menuItems } from "../../../mocks/menu-items";
-import { SqueezeButton } from "../../ui/SqueezeButton/SqueezeButton";
-import { MenuItem } from "../../ui/MenuItem/MenuItem";
+import { SqueezeButton } from "../../ui/SqueezeButton";
+import { MenuItem } from "../../ui/MenuItem";
 export const Menu = () => (
   <S.Menu>
     <S.MenuHeader>

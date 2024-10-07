@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AdditionalControls } from "./AdditionalControls";
+import { AdditionalControls } from ".";
 
 export default {
   title: "Blocks",

@@ -1,5 +1,5 @@
 import React from "react";
-import { OrientationButton } from "./OrientationButton";
+import { OrientationButton } from ".";
 
 export default {
   title: "Кнопка смены ориентации",
