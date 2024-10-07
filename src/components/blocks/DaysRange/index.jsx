@@ -8,8 +8,11 @@ import { days } from "../../../mocks/days";
 export const DaysRange = ({ children }) => {
   const daysRef = useRef(null);
   const [daysPosition, setDaysPosition] = useState(0);
+  // todo использовать useState для хранения массива дней,
+  // todo setDays добавляет в массив дни в начало
   const handleDaysScroll = (e) => {
     setDaysPosition((prev) => prev + e.deltaX);
+    // todo при скролле вправо добавлять прошедние дни через setDays
   };
   return (
     <S.DaysRange>
