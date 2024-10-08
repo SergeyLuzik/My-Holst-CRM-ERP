@@ -17,7 +17,7 @@ export const DaysWrapper = styled.div`
 `;
 
 export const DaysList = styled(Ul)`
-  display: flex;
+  display: inline-flex;
   gap: ${({ theme }) => theme.spacings.m};
 `;
 
