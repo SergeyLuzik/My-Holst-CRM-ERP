@@ -7,6 +7,12 @@ const TYPES_TEXT_COLORS = {
   past: "grey",
 };
 
+const ORDERS_COUNT_COLORS = {
+  common: "main",
+  hi: "approveBg",
+  overload: "accent",
+};
+
 export const DaysRange = styled.div`
   position: relative;
   display: grid;
@@ -78,5 +84,14 @@ export const Today = styled.span`
 `;
 
 export const OrdersCount = styled.span`
-  line-height: 1;
+  ${daysInfo};
+  color: ${({ theme, $count }) => {
+    if ($count < 20) {
+      return theme.colors[ORDERS_COUNT_COLORS.common];
+    } else if ($count < 30) {
+      return theme.colors[ORDERS_COUNT_COLORS.hi];
+    } else {
+      return theme.colors[ORDERS_COUNT_COLORS.overload];
+    }
+  }};
 `;
