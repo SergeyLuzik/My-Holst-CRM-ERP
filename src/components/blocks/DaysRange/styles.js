@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Li, Ul, A } from "../../../styled-tags";
 
 const TYPES_TEXT_COLORS = {
@@ -78,8 +78,14 @@ export const Day = styled(A)`
   }
 `;
 
-export const Today = styled.span`
+const daysInfo = css`
+  font-size: 14px;
   line-height: 1;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+`;
+
+export const Today = styled.span`
+  ${daysInfo};
   color: ${({ theme }) => theme.colors.main};
 `;
 
