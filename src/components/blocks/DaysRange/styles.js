@@ -17,7 +17,9 @@ export const DaysWrapper = styled.div`
 `;
 
 export const DaysList = styled(Ul)`
-  display: inline-flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
   gap: ${({ theme }) => theme.spacings.m};
 `;
 
