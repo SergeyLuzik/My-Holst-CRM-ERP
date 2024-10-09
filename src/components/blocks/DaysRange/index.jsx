@@ -28,10 +28,17 @@ export const DaysRange = ({ children }) => {
         console.log("вправо", e.deltaX, e.deltaY);
         // при скролле вправо добавлять прошедние дни через setDays
         setDays([setDay(prev + e.deltaY), ...days]); //  setDays добавляет в массив дни в начало
+        return prev; // вместо смещения дни сдвигает добавление новых дней
       }
       if (prev > newDaysPosition) {
-        console.log("влево", e.deltaX, e.deltaY);
-        if (wrapperRect.right > daysRect.right) {
+        console.log(
+          "влево",
+          e.deltaX,
+          e.deltaY,
+          wrapperRect.right,
+          daysRect.right
+        );
+        if (wrapperRect.left + 400 > daysRect.right) {
           return prev;
         }
       }
