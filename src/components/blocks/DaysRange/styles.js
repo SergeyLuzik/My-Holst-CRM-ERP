@@ -13,6 +13,7 @@ export const DaysRange = styled.div`
 `;
 
 export const DaysWrapper = styled.div`
+  display: flex;
   overflow-x: hidden;
 `;
 
