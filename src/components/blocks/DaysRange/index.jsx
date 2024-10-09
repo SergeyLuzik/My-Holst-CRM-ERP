@@ -54,11 +54,11 @@ export const DaysRange = ({ children }) => {
           ref={daysRef}
           style={{ transform: `translateX(${daysPosition}px)` }}
         >
-          {days.map(({ day, type }) => (
+          {days.map(({ day, type, ordersCount }) => (
             <S.DayWrapper key={day}>
               <S.Today>сегодня</S.Today>
               <S.Day $type={type}>{day}</S.Day>
-              <S.OrdersCount>20</S.OrdersCount>
+              <S.OrdersCount $count={ordersCount}>{ordersCount}</S.OrdersCount>
             </S.DayWrapper>
           ))}
         </S.DaysList>
