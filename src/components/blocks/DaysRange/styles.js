@@ -1,7 +1,14 @@
 import styled from "styled-components";
-import { Li, Ul } from "../../../styled-tags";
+import { Li, Ul, A } from "../../../styled-tags";
+
+const TYPES_TEXT_COLORS = {
+  selected: "white",
+  today: "black",
+  past: "grey",
+};
 
 export const DaysRange = styled.div`
+  position: relative;
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: max-content;
@@ -13,6 +20,11 @@ export const DaysRange = styled.div`
 `;
 
 export const DaysWrapper = styled.div`
+  margin-left: 6.25%;
+  margin-right: 0.75%;
+  width: 93%;
+  position: absolute;
+  transform: translateY(-20%);
   display: flex;
   overflow-x: hidden;
 `;
@@ -24,7 +36,47 @@ export const DaysList = styled(Ul)`
   gap: ${({ theme }) => theme.spacings.m};
 `;
 
-export const Day = styled(Li)`
+export const DayWrapper = styled(Li)`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: ${({ theme }) => theme.spacings.m};
   flex-shrink: 0;
+`;
+
+export const Day = styled(A)`
+  position: relative;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  padding-inline: ${({ theme }) => theme.spacings.s};
+  padding-block: ${({ theme }) => theme.spacings.xs};
+  border-radius: ${({ theme }) => theme.radiuses.m};
+
+  ${({ theme, $type }) =>
+    `color: ${
+      theme.colors[
+        `${$type === undefined ? "black" : TYPES_TEXT_COLORS[$type]}`
+      ]
+    }`};
+
+  ${({ theme, $type }) =>
+    $type === "selected" && `background-color: ${theme.colors.main}`};
+
+  ${({ theme, $type }) =>
+    $type === "today" && `border: 1px solid ${theme.colors.main}`};
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const Today = styled.span`
+  line-height: 1;
+  color: ${({ theme }) => theme.colors.main};
+`;
+
+export const OrdersCount = styled.span`
+  line-height: 1;
 `;
