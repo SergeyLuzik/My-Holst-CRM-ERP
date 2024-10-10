@@ -22,6 +22,7 @@ export const DaysRange = styled.div`
   border-radius: ${({ theme }) => theme.radiuses.xl};
   gap: ${({ theme }) => theme.spacings.l};
   padding: ${({ theme }) => theme.spacings.s};
+  margin-block: ${({ theme }) => theme.spacings.xl};
   width: 100%;
 `;
 
