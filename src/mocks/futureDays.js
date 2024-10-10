@@ -7,8 +7,8 @@ function getFutureDays(daysAmount) {
   const result = [];
 
   for (let i = 0; i <= daysAmount; i++) {
-    const day = new Date(todayDate.setDate(todayDay + i));
-    result.push(formatDate(day));
+    const dayDate = new Date(todayDate.setDate(todayDay + i));
+    result.push({ id: dayDate.getTime(), day: formatDate(dayDate) });
   }
   return result;
 }
@@ -20,7 +20,8 @@ function setFutureDays() {
   let result = [];
   for (let i = 0; i < 3; i++) {
     let day = {};
-    day.day = futureDays[i];
+    day.id = futureDays[i].id;
+    day.day = futureDays[i].day;
     if (types[i]) {
       day.type = types[i];
     }
