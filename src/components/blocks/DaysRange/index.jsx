@@ -4,6 +4,7 @@ import { Day } from "../../ui/Day";
 import { MonthSelect } from "../../ui/MonthSelect";
 
 import { futureDays } from "../../../mocks/futureDays";
+import { getWordDeclension } from "../../../utils";
 
 const setDay = () => ({ day: Date.now(), type: "past" });
 
@@ -58,7 +59,15 @@ export const DaysRange = ({ children }) => {
             <S.DayWrapper key={day}>
               <S.Today>сегодня</S.Today>
               <S.Day $type={type}>{day}</S.Day>
-              <S.OrdersCount $count={ordersCount}>{ordersCount}</S.OrdersCount>
+              {ordersCount && (
+                <S.OrdersCount $count={ordersCount}>
+                  {`${ordersCount} ${getWordDeclension(ordersCount, [
+                    "картина",
+                    "картины",
+                    "картин",
+                  ])}`}
+                </S.OrdersCount>
+              )}
             </S.DayWrapper>
           ))}
         </S.DaysList>
