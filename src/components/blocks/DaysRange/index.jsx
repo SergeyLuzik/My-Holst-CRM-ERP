@@ -4,9 +4,9 @@ import { Day } from "../../ui/Day";
 import { MonthSelect } from "../../ui/MonthSelect";
 
 import { futureDays } from "../../../mocks/futureDays";
-import { getWordDeclension } from "../../../utils";
+import { formatDate, getWordDeclension } from "../../../utils";
 
-const setDay = () => ({ day: Date.now(), type: "past" });
+//const setDay = (day) => ({ day: day, type: "past" });
 
 export const DaysRange = ({ children }) => {
   const daysWrapperRef = useRef(null);
@@ -14,6 +14,10 @@ export const DaysRange = ({ children }) => {
 
   const [daysPosition, setDaysPosition] = useState(0);
   const [days, setDays] = useState(futureDays);
+  const [nextPastDay, setNextPastDay] = useState({
+    day: formatDate(new Date().setDate(new Date().getDate() - 1)),
+    type: "past",
+  });
 
   const handleDaysScroll = (e) => {
     const wrapperRect = daysWrapperRef.current.getBoundingClientRect();
@@ -28,7 +32,8 @@ export const DaysRange = ({ children }) => {
       if (prev < newDaysPosition) {
         console.log("вправо", e.deltaX, e.deltaY);
         // при скролле вправо добавлять прошедние дни через setDays
-        setDays([setDay(prev + e.deltaY), ...days]); //  setDays добавляет в массив дни в начало
+        setDays([nextPastDay, ...days]); //  setDays добавляет в массив дни в начало
+        setNextPastDay();
         return prev; // вместо смещения дни сдвигает добавление новых дней
       }
       if (prev > newDaysPosition) {
