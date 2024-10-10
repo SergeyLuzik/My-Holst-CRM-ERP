@@ -32,7 +32,7 @@ export const DaysWrapper = styled.div`
   position: absolute;
   transform: translateY(-20%);
   display: flex;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 export const DaysList = styled(Ul)`
