@@ -56,7 +56,7 @@ export const DaysRange = ({ children }) => {
           style={{ transform: `translateX(${daysPosition}px)` }}
         >
           {days.map(({ day, type, ordersCount }) => (
-            <S.DayWrapper key={day}>
+            <S.DayWrapper key={day} $type={type} $ordersCount={ordersCount}>
               {type === "today" && <S.Today>сегодня</S.Today>}
               <S.Day $type={type}>{day}</S.Day>
               {ordersCount && (

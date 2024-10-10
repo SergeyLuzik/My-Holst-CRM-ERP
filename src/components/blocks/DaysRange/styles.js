@@ -44,11 +44,16 @@ export const DaysList = styled(Ul)`
 
 export const DayWrapper = styled(Li)`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: ${({ theme }) => theme.spacings.m};
+
   flex-shrink: 0;
+  ${({ theme, $type, $ordersCount }) => {
+    if ($type === "today" || $ordersCount) {
+      return `flex-direction: column;
+    justify-content: flex-end;
+  gap: ${theme.spacings.m};`;
+    }
+  }}
 `;
 
 export const Day = styled(A)`
