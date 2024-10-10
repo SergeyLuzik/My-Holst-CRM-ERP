@@ -57,7 +57,7 @@ export const DaysRange = ({ children }) => {
         >
           {days.map(({ day, type, ordersCount }) => (
             <S.DayWrapper key={day}>
-              <S.Today>сегодня</S.Today>
+              {type === "today" && <S.Today>сегодня</S.Today>}
               <S.Day $type={type}>{day}</S.Day>
               {ordersCount && (
                 <S.OrdersCount $count={ordersCount}>
