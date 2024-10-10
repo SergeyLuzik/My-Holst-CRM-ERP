@@ -1,7 +1,7 @@
 export const futureDays = [
-  { day: "Четверг, 9 августа", type: "today", ordersCount: 25 },
-  { day: "Пятница, 10 августа", type: "selected" },
-  { day: "Суббота, 11 августа" },
+  { day: "Четверг, 9 августа", type: "today", ordersCount: 35 },
+  { day: "Пятница, 10 августа", type: "selected", ordersCount: 25 },
+  { day: "Суббота, 11 августа", ordersCount: 5 },
   { day: "Воскресенье, 12 августа" },
 ];
 
