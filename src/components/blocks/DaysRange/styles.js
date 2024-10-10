@@ -30,7 +30,7 @@ export const DaysWrapper = styled.div`
   margin-right: 0.75%;
   width: 93%;
   position: absolute;
-  transform: translateY(-20%);
+  transform: translateY(-25%);
   display: flex;
   overflow: hidden;
 `;
