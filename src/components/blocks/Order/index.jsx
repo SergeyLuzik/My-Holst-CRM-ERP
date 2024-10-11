@@ -8,6 +8,7 @@ import { TimeTag } from "../../ui/TimeTag";
 import { Select } from "../../ui/Select";
 import { Status } from "../../ui/Status";
 import { StatusOptions } from "../StatusOptions";
+import { EditableText } from "../../ui/EditableText";
 
 export const Order = () => (
   <S.Order>
@@ -21,7 +22,7 @@ export const Order = () => (
     <OrderItem width="75px">{"100x100"}</OrderItem>
     <OrderItem width="114px">{"Сканирование"}</OrderItem>
     <OrderItem width="432px">
-      {"Свадебная пара и мама, на фоне буквы, декарация с цветами"}
+      <EditableText text="Свадебная пара и мама, на фоне буквы, декарация с цветами" />
     </OrderItem>
     <OrderItem width="170px">{"ШИР ТЕМНО-ЖЕЛТАЯ"}</OrderItem>
     <Tags>
