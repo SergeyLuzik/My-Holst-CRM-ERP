@@ -9,6 +9,7 @@ import { Select } from "../../ui/Select";
 import { Status } from "../../ui/Status";
 import { StatusOptions } from "../StatusOptions";
 import { EditableText } from "../../ui/EditableText";
+import { StyleOptions } from "../../ui/StyleOptions";
 
 export const Order = () => (
   <S.Order>
@@ -20,7 +21,14 @@ export const Order = () => (
       />
     </OrderItem>
     <OrderItem width="75px">{"100x100"}</OrderItem>
-    <OrderItem width="114px">{"Сканирование"}</OrderItem>
+    <OrderItem width="114px">
+      {" "}
+      <Select
+        Trigger={EditableText}
+        triggerProps={{ text: "Сканирование" }}
+        Dropdown={StyleOptions}
+      />
+    </OrderItem>
     <OrderItem width="432px">
       <EditableText text="Свадебная пара и мама, на фоне буквы, декарация с цветами" />
     </OrderItem>
