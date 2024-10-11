@@ -1,6 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Input, P } from "../../../styled-tags";
 import { pill } from "../../../style-fragments";
+
+const text = css`
+  font-size: 14px;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+  color: ${({ theme }) => theme.colors.black};
+`;
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -12,12 +18,13 @@ export const Wrapper = styled.div`
   }
 `;
 export const Text = styled(P)`
-  ${pill}
+  ${pill};
+  ${text};
 `;
 export const Edit = styled(Input)`
   ${pill};
+  ${text};
   width: 100%;
-  border: ${({ theme }) => `1px solid ${theme.colors.main}`};
   &:focus-visible {
     outline-color: ${({ theme }) => theme.colors.main};
   }
