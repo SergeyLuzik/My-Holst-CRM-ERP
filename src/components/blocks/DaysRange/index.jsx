@@ -8,17 +8,23 @@ import { formatDate, getWordDeclension } from "../../../utils";
 
 //const setDay = (day) => ({ day: day, type: "past" });
 
+const setPastDay = (timestamp) => {
+  const date = new Date(timestamp);
+  const day = date.getDate();
+  const pastDayId = date.setDate(day - 1);
+
+  return { id: pastDayId, day: formatDate(pastDayId), type: "past" };
+};
+
 export const DaysRange = ({ children }) => {
   const daysWrapperRef = useRef(null);
   const daysRef = useRef(null);
 
   const [daysPosition, setDaysPosition] = useState(0);
   const [days, setDays] = useState(futureDays);
-  const [nextPastDay, setNextPastDay] = useState({
-    id: new Date().setDate(new Date().getDate() - 1).getTime(),
-    day: formatDate(new Date().setDate(new Date().getDate() - 1)),
-    type: "past",
-  });
+  const [nextPastDay, setNextPastDay] = useState(
+    setPastDay(new Date().getTime())
+  );
 
   const handleDaysScroll = (e) => {
     const wrapperRect = daysWrapperRef.current.getBoundingClientRect();
@@ -34,11 +40,7 @@ export const DaysRange = ({ children }) => {
         console.log("вправо", e.deltaX, e.deltaY);
         // при скролле вправо добавлять прошедние дни через setDays
         setDays([nextPastDay, ...days]); //  setDays добавляет в массив дни в начало
-        setNextPastDay(({ id }) => ({
-          id: new Date(id).setDate(new Date().getDate() - 1).getTime(),
-          day: formatDate(new Date(id).setDate(new Date().getDate() - 1)),
-          type: "past",
-        }));
+        setNextPastDay(({ id }) => setPastDay(id));
         return prev; // вместо смещения дни сдвигает добавление новых дней
       }
       if (prev > newDaysPosition) {
