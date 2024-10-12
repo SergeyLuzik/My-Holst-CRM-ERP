@@ -3,8 +3,7 @@ import * as S from "./styles";
 import { OrderItem } from "../../ui/OrderItem";
 import { PayableAmount } from "../../ui/PayableAmount";
 import { Tags } from "../Tags";
-import { TextTag } from "../../ui/TextTag";
-import { TimeTag } from "../../ui/TimeTag";
+import { Tag } from "../../ui/Tag";
 import { Select } from "../../ui/Select";
 import { Status } from "../../ui/Status";
 import { StatusOptions } from "../StatusOptions";
@@ -34,10 +33,10 @@ export const Order = () => (
     </OrderItem>
     <OrderItem width="170px">{"ШИР ТЕМНО-ЖЕЛТАЯ"}</OrderItem>
     <Tags>
-      <TimeTag time="15:00" />
-      <TextTag text="Багет 3222" type="important" />
-      <TextTag text="Лак" type="important" />
-      <TextTag text="Комментарий" type="common" />
+      <Tag type="time" text="15:00" />
+      <Tag type="important" text="Багет 3222" />
+      <Tag type="important" text="Лак" />
+      <Tag type="common" text="Комментарий" />
     </Tags>
     <OrderItem width="168px">{"Капуткина Ксения"}</OrderItem>
     <PayableAmount text="11 050 ₽" width="74px" />
