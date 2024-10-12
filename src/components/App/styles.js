@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import Nunito from "../../assets/fonts/Nunito-VariableFont_wght.woff2";
+
 export const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: "Nunito";
@@ -7,22 +8,37 @@ export const GlobalStyle = createGlobalStyle`
     format("woff2-variations");
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Nunito", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+  color: ${({ theme }) => theme.colors.black};
+  line-height: 1;
   margin: 0;
 
 
 }
 
+img,
+picture {
+  /*добавляет picture для работы стилей с picture, и в браузерах без picture*/
+  display: block;
+  max-width: 100%;
+  border-radius: inherit; /* для работы border-radius при picture*/
+}
+
 input,
 textarea,
 select,
-button {
+button {  
   font: inherit;
+  color: inherit;
 }
 `;
 

@@ -9,7 +9,7 @@ const types = {
 
 export const TextTag = styled.div`
   ${pill};
-  line-height: 1;
+
   text-transform: uppercase;
   display: inline-block;
   font-weight: ${({ theme }) => theme.fontWeights.bold};

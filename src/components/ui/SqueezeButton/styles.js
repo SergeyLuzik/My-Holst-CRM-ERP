@@ -9,7 +9,7 @@ export const SqueezeButton = styled(Button)`
   padding-right: 12px;
   padding-block: 9px;
   border-radius: 50%;
-  color: ${({ theme }) => theme.colors.black};
+
   box-shadow: ${({ theme }) => theme.shadows.button};
 
   &:hover {

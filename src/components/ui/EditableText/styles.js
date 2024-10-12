@@ -3,9 +3,7 @@ import { Input, P } from "../../../styled-tags";
 import { pill } from "../../../style-fragments";
 
 const text = css`
-  font-size: 14px;
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
-  color: ${({ theme }) => theme.colors.black};
 `;
 
 export const Wrapper = styled.div`

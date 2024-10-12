@@ -7,7 +7,7 @@ export const Button = styled.button.attrs((props) => ({
   cursor: pointer;
   box-shadow: none;
   background: none;
-  line-height: 1;
+
   &:hover,
   &:active {
     background: none;

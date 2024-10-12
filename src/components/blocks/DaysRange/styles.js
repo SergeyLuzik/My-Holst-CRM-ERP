@@ -60,7 +60,6 @@ export const DayWrapper = styled(Li)`
 export const Day = styled(A)`
   position: relative;
   flex-shrink: 0;
-  font-size: 14px;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   padding-inline: ${({ theme }) => theme.spacings.s};
   padding-block: ${({ theme }) => theme.spacings.xs};
@@ -85,8 +84,6 @@ export const Day = styled(A)`
 `;
 
 const daysInfo = css`
-  font-size: 14px;
-  line-height: 1;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
 `;
 
