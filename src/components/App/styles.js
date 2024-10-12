@@ -25,6 +25,14 @@ body {
 
 }
 
+img,
+picture {
+  /*добавляет picture для работы стилей с picture, и в браузерах без picture*/
+  display: block;
+  max-width: 100%;
+  border-radius: inherit; /* для работы border-radius при picture*/
+}
+
 input,
 textarea,
 select,
