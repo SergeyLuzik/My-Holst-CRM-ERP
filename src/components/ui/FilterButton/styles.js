@@ -6,9 +6,9 @@ export const FilterButton = styled(Button)`
   display: flex;
   gap: ${({ theme }) => theme.spacings.xs};
   align-items: center;
-  font-size: 14px;
+
   font-weight: ${({ theme }) => theme.fontWeights.bold};
-  color: ${({ theme }) => theme.colors.black};
+
   padding-inline: ${({ theme }) => theme.spacings.s};
   padding-block: ${({ theme }) => theme.spacings.xs};
 

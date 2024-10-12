@@ -9,7 +9,7 @@ const typesTextColors = {
 
 export const Day = styled(A)`
   flex-shrink: 0;
-  font-size: 14px;
+
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   padding-inline: ${({ theme }) => theme.spacings.s};
   padding-block: ${({ theme }) => theme.spacings.xs};
