@@ -14,7 +14,7 @@ export const ColumnHeader = styled(Button)`
   align-items: center;
   font-size: 12px;
   font-weight: ${({ theme }) => theme.fontWeights.extraBold};
-  color: ${({ theme }) => theme.colors.black};
+
   text-transform: uppercase;
 
   &:hover {

@@ -11,10 +11,10 @@ const typesColor = {
 };
 export const Status = styled(Button)`
   ${pill};
-  font-size: 14px;
+
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.black};
+
   background-color: ${({ theme, $type }) => theme.colors[typesColor[$type]]};
   &:hover {
     background-color: ${({ theme, $type }) => theme.colors[typesColor[$type]]};

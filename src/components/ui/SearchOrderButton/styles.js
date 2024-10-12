@@ -6,7 +6,7 @@ export const SearchOrderButton = styled(Button)`
   display: flex;
   gap: ${({ theme }) => theme.spacings.xs};
   align-items: center;
-  font-size: 14px;
+
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.white};
