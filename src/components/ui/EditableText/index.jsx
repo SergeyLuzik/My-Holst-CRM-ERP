@@ -2,14 +2,27 @@ import React, { useState } from "react";
 
 import * as S from "./styles";
 
-export const EditableText = ({ text }) => {
+export const EditableText = ({ Viewer, viewerText, Editor }) => {
+  const [text, setText] = useState(viewerText);
   const [editMode, setEditMode] = useState(false);
+
+  const handleRootClick = () => {
+    console.log("editMode", editMode);
+    setEditMode((prev) => (prev ? prev : !prev));
+  };
+
+  const handleValueChange = (value) => {
+    console.log("setting value by setText", value);
+    setText(value);
+
+    setEditMode(false);
+  };
   return (
-    <S.Wrapper onDoubleClick={() => setEditMode((prev) => !prev)}>
+    <S.Wrapper onClick={handleRootClick}>
       {editMode ? (
-        <S.Edit defaultValue={text}></S.Edit>
+        <Editor value={text} handleValueChange={handleValueChange} />
       ) : (
-        <S.Text>{text}</S.Text>
+        <Viewer {...{ text: text }} />
       )}
     </S.Wrapper>
   );
