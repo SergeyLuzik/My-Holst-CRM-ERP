@@ -9,6 +9,8 @@ import { Status } from "../../ui/Status";
 import { StatusOptions } from "../StatusOptions";
 import { EditableText } from "../../ui/EditableText";
 import { StyleOptions } from "../../ui/StyleOptions";
+import { OrderText } from "../../ui/OrderText";
+import { OrderTextInput } from "../../ui/OrderTextInput";
 
 export const Order = () => (
   <S.Order>
@@ -20,16 +22,13 @@ export const Order = () => (
       />
     </OrderItem>
     <OrderItem width="75px">{"100x100"}</OrderItem>
-    <OrderItem width="114px">
-      {" "}
-      <Select
-        Trigger={EditableText}
-        triggerProps={{ text: "Сканирование" }}
-        Dropdown={StyleOptions}
-      />
-    </OrderItem>
+    <OrderItem width="114px"></OrderItem>
     <OrderItem width="432px">
-      <EditableText text="Свадебная пара и мама, на фоне буквы, декарация с цветами" />
+      <EditableText
+        Viewer={OrderText}
+        viewerText={"Свадебная пара и мама, на фоне буквы, декарация с цветами"}
+        Editor={OrderTextInput}
+      />
     </OrderItem>
     <OrderItem width="170px">{"ШИР ТЕМНО-ЖЕЛТАЯ"}</OrderItem>
     <Tags>
