@@ -2,11 +2,12 @@ import React, { useState } from "react";
 
 import * as S from "./styles";
 
-export const EditableText = ({ Viewer, viewerText, Editor }) => {
+export const EditableText = ({ Viewer, viewerText, Editor, onClick }) => {
   const [text, setText] = useState(viewerText);
   const [editMode, setEditMode] = useState(false);
 
   const handleRootClick = () => {
+    onClick && onClick();
     console.log("editMode", editMode);
     setEditMode((prev) => (prev ? prev : !prev));
   };
