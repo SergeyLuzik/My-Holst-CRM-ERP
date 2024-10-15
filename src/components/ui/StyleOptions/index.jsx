@@ -35,7 +35,7 @@ const STYLES = [
   "Инста-Арт",
 ];
 
-export const StyleOptions = ({ top, left, onOptionClick }) => {
+export const StyleOptions = ({ top, left, handleOptionClick }) => {
   return (
     <Popup top={top} left={left}>
       <S.List>
@@ -44,7 +44,7 @@ export const StyleOptions = ({ top, left, onOptionClick }) => {
             <S.Style
               key={style}
               style={style}
-              onClick={() => onOptionClick({ style: style })}
+              onClick={() => handleOptionClick({ text: style })}
             >
               {style}
             </S.Style>
