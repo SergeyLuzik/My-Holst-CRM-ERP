@@ -3,7 +3,7 @@ import * as S from "./styles";
 import { Day } from "../../ui/Day";
 import { MonthSelect } from "../../ui/MonthSelect";
 
-import { futureDays } from "../../../mocks/futureDays";
+import { futureDays } from "../../../mocks";
 import { formatDate, getWordDeclension } from "../../../utils";
 
 //const setDay = (day) => ({ day: day, type: "past" });
