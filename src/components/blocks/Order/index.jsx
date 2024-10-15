@@ -22,7 +22,17 @@ export const Order = () => (
       />
     </OrderItem>
     <OrderItem width="75px">{"100x100"}</OrderItem>
-    <OrderItem width="114px"></OrderItem>
+    <OrderItem width="114px">
+      <Select
+        Trigger={EditableText}
+        triggerProps={{
+          Viewer: OrderText,
+          viewerText: "Сканирование",
+          Editor: OrderTextInput,
+        }}
+        Dropdown={StyleOptions}
+      />
+    </OrderItem>
     <OrderItem width="432px">
       <EditableText
         Viewer={OrderText}
