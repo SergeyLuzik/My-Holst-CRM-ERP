@@ -1,16 +1,16 @@
 import React from "react";
 import * as S from "./styles";
-import { OrderItem } from "../../ui/OrderItem";
-import { PayableAmount } from "../../ui/PayableAmount";
-import { Tags } from "../Tags";
-import { Tag } from "../../ui/Tag";
-import { Select } from "../../ui/Select";
-import { Status } from "../../ui/Status";
-import { StatusOptions } from "../StatusOptions";
-import { EditableText } from "../../ui/EditableText";
-import { StyleOptions } from "../../ui/StyleOptions";
-import { OrderText } from "../../ui/OrderText";
-import { OrderTextInput } from "../../ui/OrderTextInput";
+import { OrderItem } from "../../../ui/OrderItem";
+import { PayableAmount } from "../../../ui/PayableAmount";
+import { Tags } from "../../Tags";
+import { Tag } from "../../../ui/Tag";
+import { Select } from "../../../ui/Select";
+import { Status } from "../../../ui/Status";
+import { StatusOptions } from "../../StatusOptions";
+import { EditableText } from "../../../ui/EditableText";
+import { StyleOptions } from "../../../ui/StyleOptions";
+import { OrderText } from "../../../ui/OrderText";
+import { OrderTextInput } from "../../../ui/OrderTextInput";
 
 export const Order = () => (
   <S.Order>

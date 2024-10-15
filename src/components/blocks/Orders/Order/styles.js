@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Li } from "../../../styled-tags";
+import { Li } from "../../../../styled-tags";
 
 export const Order = styled(Li)`
   display: flex;
