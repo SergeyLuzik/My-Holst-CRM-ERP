@@ -1,18 +1,14 @@
 import React from "react";
 import * as S from "./styles";
-import { Order } from "../Order";
+
+import { orders } from "../../../mocks/orders";
+
+import { Order } from "./Order";
 
 export const Orders = () => (
   <S.Orders>
-    <Order />
-    <Order />
-    <Order />
-    <Order />
-    <Order />
-    <Order />
-    <Order />
-    <Order />
-    <Order />
-    <Order />
+    {orders.map((order) => (
+      <Order key={order.id} order={order} />
+    ))}
   </S.Orders>
 );

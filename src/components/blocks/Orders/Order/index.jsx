@@ -12,7 +12,7 @@ import { StyleOptions } from "../../../ui/StyleOptions";
 import { OrderText } from "../../../ui/OrderText";
 import { OrderTextInput } from "../../../ui/OrderTextInput";
 
-export const Order = () => (
+export const Order = (order) => (
   <S.Order>
     <OrderItem width="106px">
       <Select
