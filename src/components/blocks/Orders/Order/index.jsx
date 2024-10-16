@@ -11,9 +11,11 @@ import { EditableText } from "../../../ui/EditableText";
 import { StyleOptions } from "../../../ui/StyleOptions";
 import { OrderText } from "../../../ui/OrderText";
 import { OrderTextInput } from "../../../ui/OrderTextInput";
+import { Field } from "./Field";
 
-export const Order = (order) => (
+export const Order = ({ order }) => (
   <S.Order>
+    <Field width="106px" text={order.status} />
     <OrderItem width="106px">
       <Select
         Trigger={Status}
