@@ -13,6 +13,7 @@ import { OrderText } from "../../../ui/OrderText";
 import { OrderTextInput } from "../../../ui/OrderTextInput";
 import { Field } from "./components/common/Field";
 import { Status } from "./components/field-types/Status";
+import { Description } from "./components/field-types/Description";
 
 export const Order = ({ order }) => (
   <S.Order>
@@ -32,11 +33,7 @@ export const Order = ({ order }) => (
       />
     </OrderItem>
     <OrderItem width="432px">
-      <EditableText
-        Viewer={OrderText}
-        viewerText={"Свадебная пара и мама, на фоне буквы, декарация с цветами"}
-        Editor={OrderTextInput}
-      />
+      <Description description={order.description} />
     </OrderItem>
     <OrderItem width="170px">{"ШИР ТЕМНО-ЖЕЛТАЯ"}</OrderItem>
     <Tags>
@@ -56,4 +53,12 @@ export const Order = ({ order }) => (
         triggerProps={{ type: "new" }}
         Dropdown={StatusOptions}
       />
+
+      <EditableText
+        Viewer={OrderText}
+        viewerText={"Свадебная пара и мама, на фоне буквы, декарация с цветами"}
+        Editor={OrderTextInput}
+      />
+
+
        */
