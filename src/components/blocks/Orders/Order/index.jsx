@@ -5,23 +5,19 @@ import { PayableAmount } from "../../../ui/PayableAmount";
 import { Tags } from "../../Tags";
 import { Tag } from "../../../ui/Tag";
 import { Select } from "../../../ui/Select";
-import { Status } from "../../../ui/Status";
-import { StatusOptions } from "../../StatusOptions";
+//import { Status } from "../../../ui/Status";
+//import { StatusOptions } from "./components/field-types/Status/components/StatusOptions";
 import { EditableText } from "../../../ui/EditableText";
 import { StyleOptions } from "../../../ui/StyleOptions";
 import { OrderText } from "../../../ui/OrderText";
 import { OrderTextInput } from "../../../ui/OrderTextInput";
-import { Field } from "./Field";
+import { Field } from "./components/common/Field";
+import { Status } from "./components/field-types/Status";
 
 export const Order = ({ order }) => (
   <S.Order>
-    <Field width="106px" text={order.status} />
     <OrderItem width="106px">
-      <Select
-        Trigger={Status}
-        triggerProps={{ type: "new" }}
-        Dropdown={StatusOptions}
-      />
+      <Status type={order.status} />
     </OrderItem>
     <OrderItem width="75px">{"100x100"}</OrderItem>
     <OrderItem width="114px">
@@ -53,3 +49,11 @@ export const Order = ({ order }) => (
     <PayableAmount text="11 050 ₽" width="74px" />
   </S.Order>
 );
+
+/*
+      <Select
+        Trigger={Status}
+        triggerProps={{ type: "new" }}
+        Dropdown={StatusOptions}
+      />
+       */
