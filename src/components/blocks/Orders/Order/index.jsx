@@ -14,6 +14,7 @@ import { OrderTextInput } from "../../../ui/OrderTextInput";
 import { Field } from "./components/common/Field";
 import { Status } from "./components/field-types/Status";
 import { Description } from "./components/field-types/Description";
+import { Style } from "./components/field-types/Style";
 
 export const Order = ({ order }) => (
   <S.Order>
@@ -22,15 +23,7 @@ export const Order = ({ order }) => (
     </OrderItem>
     <OrderItem width="75px">{"100x100"}</OrderItem>
     <OrderItem width="114px">
-      <Select
-        Trigger={EditableText}
-        triggerProps={{
-          Viewer: OrderText,
-          viewerText: "Сканирование",
-          Editor: OrderTextInput,
-        }}
-        Dropdown={StyleOptions}
-      />
+      <Style style={order.style} />
     </OrderItem>
     <OrderItem width="432px">
       <Description description={order.description} />
