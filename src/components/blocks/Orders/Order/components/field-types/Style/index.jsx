@@ -3,6 +3,7 @@ import * as S from "./STYLES";
 import { Popup } from "../../../../../../ui/Popup";
 import { Text } from "../../common/Text";
 import { TextInput } from "../../common/TextInput";
+import { searchTextMatch } from "../../../../../../../utils";
 
 const STYLES = [
   "Бьюти Арт",
@@ -77,7 +78,7 @@ export const Style = ({ style }) => {
           />
           <Popup top={top} left={left}>
             <S.List>
-              {STYLES.map((style) => (
+              {searchTextMatch(text, STYLES).map((style) => (
                 <S.Item key={style}>
                   <Text onClick={() => handleOptionClick(style)}>{style}</Text>
                 </S.Item>
