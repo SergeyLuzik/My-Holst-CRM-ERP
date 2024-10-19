@@ -43,9 +43,12 @@ export const Style = ({ style }) => {
   const [editMode, setEditMode] = useState(false);
   console.log(text, "text");
 
-  const handleRootClick = () => {
-    console.log("клик по root");
-    setEditMode((prev) => (prev ? prev : !prev));
+  const handleTriggerClick = () => {
+    setEditMode(true);
+    setText("");
+    const boundingRect = triggerRef.current.getBoundingClientRect();
+    setTop(boundingRect.bottom);
+    setLeft(boundingRect.left + boundingRect.width / 2);
   };
 
   const handleValueChange = (value) => {
@@ -57,11 +60,6 @@ export const Style = ({ style }) => {
     setEditMode((prev) => !prev);
   };
 
-  const handleTriggerClick = () => {
-    const boundingRect = triggerRef.current.getBoundingClientRect();
-    setTop(boundingRect.bottom);
-    setLeft(boundingRect.left + boundingRect.width / 2);
-  };
   const handleOptionClick = (value) => {
     console.log("клик по опции");
     setEditMode(false);
@@ -88,14 +86,7 @@ export const Style = ({ style }) => {
           </Popup>
         </>
       ) : (
-        <Text
-          onClick={() => {
-            handleTriggerClick();
-            handleRootClick();
-          }}
-        >
-          {text}
-        </Text>
+        <Text onClick={handleTriggerClick}>{text}</Text>
       )}
     </S.Wrapper>
   );
