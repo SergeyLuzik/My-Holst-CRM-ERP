@@ -57,6 +57,7 @@ export const App = styled.div`
 export const Content = styled.div`
   display: grid;
   gap: ${({ theme }) => theme.spacings.xl};
+  grid-auto-rows: min-content;
 `;
 
 export const HeaderButtons = styled.div`
