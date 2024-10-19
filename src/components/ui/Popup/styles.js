@@ -22,6 +22,8 @@ export const Pin = styled.div`
 `;
 
 export const Content = styled.div`
+  max-height: 300px;
+  overflow-y: auto;
   display: inline-block;
   padding: ${({ theme }) => theme.spacings.l};
   border-radius: ${({ theme }) => theme.radiuses.l};
