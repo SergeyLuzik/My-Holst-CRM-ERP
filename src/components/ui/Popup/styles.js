@@ -21,11 +21,14 @@ export const Pin = styled.div`
   margin-bottom: -1px;
 `;
 
+export const Wrapper = styled.div`
+  background-color: ${({ theme }) => theme.colors.white};
+  border-radius: ${({ theme }) => theme.radiuses.l};
+`;
+
 export const Content = styled.div`
-  max-height: 300px;
+  max-height: 250px;
   overflow-y: auto;
   display: inline-block;
-  padding: ${({ theme }) => theme.spacings.l};
-  border-radius: ${({ theme }) => theme.radiuses.l};
-  background-color: ${({ theme }) => theme.colors.white};
+  margin: ${({ theme }) => theme.spacings.l};
 `;
