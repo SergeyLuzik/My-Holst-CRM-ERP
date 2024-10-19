@@ -36,62 +36,66 @@ const STYLES = [
 ];
 
 export const Style = ({ style }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [triggerValue, setTriggerValue] = useState(style);
   const [top, setTop] = useState(0);
   const [left, setLeft] = useState(0);
   const triggerRef = useRef(null);
   const [text, setText] = useState(style);
   const [editMode, setEditMode] = useState(false);
+  console.log(text, "text");
 
   const handleRootClick = () => {
-    console.log("editMode", editMode);
+    console.log("клик по root");
     setEditMode((prev) => (prev ? prev : !prev));
   };
 
   const handleValueChange = (value) => {
     console.log("setting value by setText", value);
     setText(value);
+  };
 
-    setEditMode(false);
+  const handleModeChange = () => {
+    setEditMode((prev) => !prev);
   };
 
   const handleTriggerClick = () => {
     const boundingRect = triggerRef.current.getBoundingClientRect();
     setTop(boundingRect.bottom);
     setLeft(boundingRect.left + boundingRect.width / 2);
-    setIsOpen((prev) => !prev);
   };
   const handleOptionClick = (value) => {
-    console.log(value);
-
-    setIsOpen((prev) => !prev);
-    setTriggerValue(value);
+    console.log("клик по опции");
+    setEditMode(false);
+    setText(value);
   };
 
   return (
-    <S.Wrapper
-      ref={triggerRef}
-      onClick={() => {
-        handleTriggerClick();
-        handleRootClick();
-      }}
-    >
+    <S.Wrapper ref={triggerRef}>
       {editMode ? (
-        <TextInput value={text} handleValueChange={handleValueChange} />
+        <>
+          <TextInput
+            value={text}
+            handleValueChange={handleValueChange}
+            handleModeChange={handleModeChange}
+          />
+          <Popup top={top} left={left}>
+            <S.List>
+              {STYLES.map((style) => (
+                <S.Item key={style}>
+                  <Text onClick={() => handleOptionClick(style)}>{style}</Text>
+                </S.Item>
+              ))}
+            </S.List>
+          </Popup>
+        </>
       ) : (
-        <Text>{text}</Text>
-      )}
-      {isOpen && (
-        <Popup top={top} left={left}>
-          <S.List>
-            {STYLES.map((style) => (
-              <S.Item key={style}>
-                <Text onClick={() => handleOptionClick(style)}>{style}</Text>
-              </S.Item>
-            ))}
-          </S.List>
-        </Popup>
+        <Text
+          onClick={() => {
+            handleTriggerClick();
+            handleRootClick();
+          }}
+        >
+          {text}
+        </Text>
       )}
     </S.Wrapper>
   );

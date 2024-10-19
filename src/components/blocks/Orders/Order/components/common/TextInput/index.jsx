@@ -1,31 +1,26 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styles";
 
-export const TextInput = ({ value, handleValueChange }) => {
-  const [inputValue, setInputValue] = useState(value);
+export const TextInput = ({ value, handleValueChange, handleModeChange }) => {
   const handleInputCompleat = (e) => {
     if (e.key === "Enter") {
-      console.log("inputValue on Enter", inputValue);
-      handleValueChange(inputValue);
+      handleModeChange();
     }
   };
   useEffect(() => {
-    console.log("inputValue in useEffect", inputValue);
-
     document.addEventListener("keydown", handleInputCompleat);
 
     return () => {
       document.removeEventListener("keydown", handleInputCompleat);
     };
-  });
+  }, []);
 
   return (
     <S.TextInput
       onChange={(e) => {
-        setInputValue(e.target.value);
-        console.log("inputValue in onChange", inputValue);
+        handleValueChange(e.target.value);
       }}
-      value={inputValue}
+      value={value}
       autoFocus
     />
   );

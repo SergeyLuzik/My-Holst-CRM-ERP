@@ -4,7 +4,6 @@ import { pill } from "../../../../../../../style-fragments";
 
 export const Text = styled(P)`
   ${pill};
-
   &:hover {
     background-color: ${({ theme }) => theme.colors.extraLiteMain};
     cursor: pointer;
