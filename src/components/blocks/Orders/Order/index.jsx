@@ -15,13 +15,16 @@ import { Field } from "./components/common/Field";
 import { Status } from "./components/field-types/Status";
 import { Description } from "./components/field-types/Description";
 import { Style } from "./components/field-types/Style";
+import { Size } from "./components/field-types/Size";
 
 export const Order = ({ order }) => (
   <S.Order>
     <OrderItem width="106px">
       <Status type={order.status} />
     </OrderItem>
-    <OrderItem width="75px">{"100x100"}</OrderItem>
+    <OrderItem width="75px">
+      <Size size={order.size} />
+    </OrderItem>
     <OrderItem width="114px">
       <Style style={order.style} />
     </OrderItem>
