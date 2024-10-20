@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-import { OrderTextInput } from "../../../../../../ui-kit/OrderTextInput";
+import { OrderTextInput } from "@ui-kit/OrderTextInput";
 
 export const Field = ({ width, text, editable }) => {
   const [textValue, setText] = useState(text);

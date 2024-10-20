@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Button } from "../../../../../../../styled-tags";
-import { pill } from "../../../../../../../style-fragments";
-import { Li, Ul } from "../../../../../../../styled-tags";
+import { Button } from "@styled-tags";
+import { pill } from "@style-fragments";
+import { Li, Ul } from "@styled-tags";
 
 const typesColor = {
   new: "newBg",

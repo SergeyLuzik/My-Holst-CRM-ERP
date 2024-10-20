@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import * as S from "./STYLES";
-import { Popup } from "../../../../../../ui-kit/Popup";
+import { Popup } from "@ui-kit/Popup";
 import { Text } from "../../common/Text";
 import { TextInput } from "../../common/TextInput";
-import { searchTextMatch } from "../../../../../../../utils";
+import { searchTextMatch } from "@utils";
 
 const STYLES = [
   "Бьюти Арт",

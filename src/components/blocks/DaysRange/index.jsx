@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import * as S from "./styles";
-import { Day } from "../../ui-kit/Day";
-import { MonthSelect } from "../../ui-kit/MonthSelect";
+import { Day } from "@ui-kit/Day";
+import { MonthSelect } from "@ui-kit/MonthSelect";
 
-import { futureDays } from "../../../mocks";
-import { formatDate, getWordDeclension } from "../../../utils";
+import { futureDays } from "@mocks";
+import { formatDate, getWordDeclension } from "@utils";
 
 //const setDay = (day) => ({ day: day, type: "past" });
 

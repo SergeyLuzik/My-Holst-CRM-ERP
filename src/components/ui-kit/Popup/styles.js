@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import icon from "../../../assets/icons/pin.svg";
+import icon from "@icons/pin.svg";
 
 export const Popup = styled.div`
   top: ${({ $top }) => $top}px;

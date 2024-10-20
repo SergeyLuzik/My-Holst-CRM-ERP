@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import * as S from "./styles";
-import { Popup } from "src/components/ui/Popup";
+import { Popup } from "@ui-kit/Popup";
 import { Text } from "../../common/Text";
 import { TextInput } from "../../common/TextInput";
-import { searchTextMatch } from "../../../../../../../utils";
+import { searchTextMatch } from "@utils";
 
 const SIZES = {
   allSizes: [

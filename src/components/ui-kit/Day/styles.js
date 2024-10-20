@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { A } from "../../../styled-tags";
+import { A } from "@styled-tags";
 
 const typesTextColors = {
   selected: "white",

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import { flexCenter, squareButton } from "../../../style-fragments";
-import fire from "../../../assets/icons/fire.svg";
+import { Button } from "@styled-tags";
+import { flexCenter, squareButton } from "@style-fragments";
+import fire from "@icons/fire.svg";
 
 export const PopularButton = styled(Button)`
   ${flexCenter};

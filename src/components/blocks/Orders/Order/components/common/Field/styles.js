@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { P } from "../../../../../../../styled-tags";
-import { pill } from "../../../../../../../style-fragments";
+import { P } from "@styled-tags";
+import { pill } from "@style-fragments";
 
 export const Filed = styled.div`
   width: ${({ $width }) => $width};

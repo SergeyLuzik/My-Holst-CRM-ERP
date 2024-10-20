@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import icon from "../../../assets/icons/triangle.svg";
+import { Button } from "@styled-tags";
+import icon from "@icons/triangle.svg";
 
 export const YearSelect = styled(Button)`
   display: flex;

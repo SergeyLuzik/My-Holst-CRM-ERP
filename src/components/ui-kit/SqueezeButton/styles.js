@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import { flexCenter } from "../../../style-fragments";
-import icon from "../../../assets/icons/arrow.svg";
+import { Button } from "@styled-tags";
+import { flexCenter } from "@style-fragments";
+import icon from "@icons/arrow.svg";
 
 export const SqueezeButton = styled(Button)`
   ${flexCenter};

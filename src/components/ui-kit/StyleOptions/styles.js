@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Button, Li, Ul } from "../../../styled-tags";
-import { pill } from "../../../style-fragments";
+import { Button, Li, Ul } from "@styled-tags";
+import { pill } from "@style-fragments";
 
 export const List = styled(Ul)`
   display: flex;

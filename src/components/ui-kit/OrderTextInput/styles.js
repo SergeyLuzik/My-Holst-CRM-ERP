@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Input } from "../../../styled-tags";
-import { pill } from "../../../style-fragments";
+import { Input } from "@styled-tags";
+import { pill } from "@style-fragments";
 
 export const OrderTextInput = styled(Input)`
   ${pill};

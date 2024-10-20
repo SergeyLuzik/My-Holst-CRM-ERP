@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import icon from "../../../assets/icons/search.svg";
+import { Button } from "@styled-tags";
+import icon from "@icons/search.svg";
 
 export const SearchOrderButton = styled(Button)`
   display: flex;

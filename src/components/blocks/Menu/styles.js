@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import logo from "../../../assets/icons/fullLogo.svg";
-import { Ul } from "../../../styled-tags";
+import logo from "@icons/fullLogo.svg";
+import { Ul } from "@styled-tags";
 
 export const Menu = styled.nav`
   height: 100%;

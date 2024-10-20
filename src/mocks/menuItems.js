@@ -1,9 +1,9 @@
-import picture from "../assets/icons/picture.svg";
-import polygraphy from "../assets/icons/polygraphy.svg";
-import other from "../assets/icons/other.svg";
-import cash from "../assets/icons/cash.svg";
-import needs from "../assets/icons/needs.svg";
-import notes from "../assets/icons/notes.svg";
+import picture from "@icons/picture.svg";
+import polygraphy from "@icons/polygraphy.svg";
+import other from "@icons/other.svg";
+import cash from "@icons/cash.svg";
+import needs from "@icons/needs.svg";
+import notes from "@icons/notes.svg";
 import { PlusButton } from "../components/ui-kit/PlusButton";
 import { Triangle } from "../components/ui-kit/TriangleButton/TriangleButton.stories";
 export const menuItems = [

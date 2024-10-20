@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import { flexCenter } from "../../../style-fragments";
-import icon from "../../../assets/icons/triangle.svg";
+import { Button } from "@styled-tags";
+import { flexCenter } from "@style-fragments";
+import icon from "@icons/triangle.svg";
 
 export const TriangleButton = styled(Button)`
   ${flexCenter};

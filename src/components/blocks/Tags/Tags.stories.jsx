@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Tags } from ".";
-import { TimeTag } from "../../ui-kit/TimeTag";
-import { TextTag } from "../../ui-kit/TextTag";
+import { TimeTag } from "@ui-kit/TimeTag";
+import { TextTag } from "@ui-kit/TextTag";
 
 export default {
   title: "Blocks",

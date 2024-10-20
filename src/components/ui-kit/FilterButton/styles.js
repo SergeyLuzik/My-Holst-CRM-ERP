@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import icon from "../../../assets/icons/filter.svg";
+import { Button } from "@styled-tags";
+import icon from "@icons/filter.svg";
 
 export const FilterButton = styled(Button)`
   display: flex;

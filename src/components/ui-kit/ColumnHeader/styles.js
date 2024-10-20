@@ -1,7 +1,7 @@
-import { Button } from "../../../styled-tags";
+import { Button } from "@styled-tags";
 import styled from "styled-components";
-import textSortIcon from "../../../assets/icons/textSort.svg";
-import numberSortIcon from "../../../assets/icons/numberSort.svg";
+import textSortIcon from "@icons/textSort.svg";
+import numberSortIcon from "@icons/numberSort.svg";
 
 const modeIcons = {
   text: { icon: textSortIcon, width: 12, height: 15 },

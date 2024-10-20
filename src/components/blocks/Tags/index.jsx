@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-import { PlusButton } from "../../ui-kit/PlusButton";
+import { PlusButton } from "@ui-kit/PlusButton";
 
 export const Tags = ({ children }) => {
   const [onHover, setOnHover] = useState(false);

@@ -1,6 +1,6 @@
 import React from "react";
 import { CloseButton } from ".";
-import picture from "../../../assets/icons/picture.svg";
+import picture from "@icons/picture.svg";
 
 export default {
   title: "Кнопка закрыть",

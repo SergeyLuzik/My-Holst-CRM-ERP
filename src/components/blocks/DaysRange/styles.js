@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Li, Ul, A } from "../../../styled-tags";
+import { Li, Ul, A } from "@styled-tags";
 
 const TYPES_TEXT_COLORS = {
   selected: "white",

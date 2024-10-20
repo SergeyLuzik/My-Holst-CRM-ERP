@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./styles";
 
-import { orders } from "../../../mocks/orders";
+import { orders } from "@mocks/orders";
 
 import { Order } from "./Order";
 

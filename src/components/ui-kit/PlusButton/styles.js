@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import { flexCenter } from "../../../style-fragments";
-import icon from "../../../assets/icons/plus.svg";
+import { Button } from "@styled-tags";
+import { flexCenter } from "@style-fragments";
+import icon from "@icons/plus.svg";
 
 export const PlusButton = styled(Button)`
   ${flexCenter};

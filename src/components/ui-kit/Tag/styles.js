@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
-import { pill, flexCenter } from "../../../style-fragments";
-import { Button, Li } from "../../../styled-tags";
-import clock from "../../../assets/icons/clock.svg";
-import plus from "../../../assets/icons/plus.svg";
+import { pill, flexCenter } from "@style-fragments";
+import { Button, Li } from "@styled-tags";
+import clock from "@icons/clock.svg";
+import plus from "@icons/plus.svg";
 const TYPES_BACKGROUND = {
   common: "extraLiteMain",
   important: "extraLiteAccent",

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Li, Ul } from "../../../../../../../../styled-tags";
+import { Li, Ul } from "@styled-tags";
 
 export const Wrapper = styled.div``;
 

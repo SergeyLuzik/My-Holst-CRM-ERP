@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import { flexCenter, squareButton } from "../../../style-fragments";
-import sort from "../../../assets/icons/numberSort.svg";
+import { Button } from "@styled-tags";
+import { flexCenter, squareButton } from "@style-fragments";
+import sort from "@icons/numberSort.svg";
 
 export const SortButton = styled(Button)`
   ${flexCenter};

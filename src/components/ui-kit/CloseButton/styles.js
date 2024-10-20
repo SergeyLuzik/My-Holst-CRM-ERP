@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import { flexCenter } from "../../../style-fragments";
+import { Button } from "@styled-tags";
+import { flexCenter } from "@style-fragments";
 
 export const CloseButton = styled(Button)`
   ${flexCenter};

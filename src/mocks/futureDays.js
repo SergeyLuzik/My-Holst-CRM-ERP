@@ -1,4 +1,4 @@
-import { formatDate } from "../utils/formatDate";
+import { formatDate } from "@utils/formatDate";
 export const futureDays = setFutureDays();
 
 function getFutureDays(daysAmount) {
