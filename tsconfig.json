@@ -5,7 +5,16 @@
     "noEmit": true,
     "skipLibCheck": true,
     "noImplicitAny": false,
-    "strict": false
+    "strict": false,
+    "paths": {
+      "@icons/*": ["./src/assets/icons"],
+      "@ui-kit/*": ["./src/components/ui-kit/*"],
+      "@components/*": ["./src/components/*"],
+      "@mocks/*": ["./src/mocks/*"],
+      "@style-fragments/*": ["./src/style-fragments/*"],
+      "@styled-tags/*": ["./src/styled-tags/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
