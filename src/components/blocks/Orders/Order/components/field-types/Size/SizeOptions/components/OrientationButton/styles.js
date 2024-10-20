@@ -1,6 +1,9 @@
 import styled from "styled-components";
-import { Button } from "../../../styled-tags";
-import { flexCenter, squareButton } from "../../../style-fragments";
+import { Button } from "../../../../../../../../../../styled-tags";
+import {
+  flexCenter,
+  squareButton,
+} from "../../../../../../../../../../style-fragments";
 import portrait from "../../../assets/icons/portrait.svg";
 import landscape from "../../../assets/icons/landscape.svg";
 
