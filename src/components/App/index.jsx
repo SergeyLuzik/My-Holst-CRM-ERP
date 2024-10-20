@@ -3,7 +3,7 @@ import { GlobalStyle } from "./styles";
 
 import * as S from "./styles";
 import { Menu } from "../blocks/Menu";
-import { SearchOrderButton } from "../ui-kit/SearchOrderButton";
+import { SearchOrderButton } from "@ui-kit/SearchOrderButton";
 import { AdditionalControls } from "../blocks/AdditionalControls";
 import { DaysRange } from "../blocks/DaysRange";
 import { Orders } from "../blocks/Orders";

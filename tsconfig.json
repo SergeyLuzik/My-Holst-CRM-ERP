@@ -9,7 +9,7 @@
     "paths": {
       "@icons/*": ["./src/assets/icons"],
       "@ui-kit/*": ["./src/components/ui-kit/*"],
-      "@components/*": ["./src/components/*"],
+      "@blocks/*": ["./src/blocks/*"],
       "@mocks/*": ["./src/mocks/*"],
       "@style-fragments/*": ["./src/style-fragments/*"],
       "@styled-tags/*": ["./src/styled-tags/*"],

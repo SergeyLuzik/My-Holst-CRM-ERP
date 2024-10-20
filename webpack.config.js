@@ -40,7 +40,7 @@ export default {
     alias: {
       "@icons": path.resolve(__dirname, "src/assets/icons"),
       "@ui-kit": path.resolve(__dirname, "src/components/ui-kit"),
-      "@components": path.resolve(__dirname, "src/components"),
+      "@blocks": path.resolve(__dirname, "src/components/blocks"),
       "@mocks": path.resolve(__dirname, "src/mocks"),
       "@style-fragments": path.resolve(__dirname, "src/style-fragments"),
       "@styled-tags": path.resolve(__dirname, "src/styled-tags"),
