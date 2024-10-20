@@ -3,9 +3,7 @@ import * as S from "./styles";
 export const Popup = ({ top, left, children }) => (
   <S.Popup $top={top} $left={left}>
     <S.Pin />
-    <S.Wrapper>
-      <S.Content>{children}</S.Content>
-    </S.Wrapper>
+    <S.Content>{children}</S.Content>
   </S.Popup>
 );
 

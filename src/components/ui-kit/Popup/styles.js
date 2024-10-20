@@ -21,14 +21,9 @@ export const Pin = styled.div`
   margin-bottom: -1px;
 `;
 
-export const Wrapper = styled.div`
+export const Content = styled.div`
+  display: inline-block;
+  padding: ${({ theme }) => theme.spacings.l};
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: ${({ theme }) => theme.radiuses.l};
-`;
-
-export const Content = styled.div`
-  max-height: 250px;
-  overflow-y: auto;
-  display: inline-block;
-  margin: ${({ theme }) => theme.spacings.l};
 `;
