@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import * as S from "./styles";
-import { Day } from "../../ui/Day";
-import { MonthSelect } from "../../ui/MonthSelect";
+import { Day } from "../../ui-kit/Day";
+import { MonthSelect } from "../../ui-kit/MonthSelect";
 
 import { futureDays } from "../../../mocks";
 import { formatDate, getWordDeclension } from "../../../utils";

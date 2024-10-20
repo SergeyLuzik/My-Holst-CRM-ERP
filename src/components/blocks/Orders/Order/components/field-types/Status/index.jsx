@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import * as S from "./styles";
 
-import { Popup } from "../../../../../../ui/Popup";
+import { Popup } from "../../../../../../ui-kit/Popup";
 
 const TYPES = ["new", "approve", "printed", "done", "complete"];
 

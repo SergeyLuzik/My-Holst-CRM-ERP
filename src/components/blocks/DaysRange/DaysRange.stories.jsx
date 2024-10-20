@@ -1,7 +1,7 @@
 import React from "react";
 
 import { DaysRange } from ".";
-import { Day } from "../../ui/Day";
+import { Day } from "../../ui-kit/Day";
 
 export default {
   title: "Blocks",

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Day } from "../../ui/Day/styles";
+import { Day } from "../../ui-kit/Day/styles";
 
 export const AdditionalControls = styled.div`
   display: flex;
