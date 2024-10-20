@@ -1,5 +1,5 @@
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
-const path = require("path");
+import path from "path";
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
@@ -15,10 +15,18 @@ const config = {
     options: {},
   },
   webpackFinal: async (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      "/src": path.resolve(__dirname, "../src"),
-    };
+    if (config.resolve) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        "@icons": path.resolve(__dirname, "src/assets/icons"),
+        "@ui-kit": path.resolve(__dirname, "src/components/ui-kit"),
+        "@components": path.resolve(__dirname, "src/components"),
+        "@mocks": path.resolve(__dirname, "src/mocks"),
+        "@style-fragments": path.resolve(__dirname, "src/style-fragments"),
+        "@styled-tags": path.resolve(__dirname, "src/styled-tags"),
+        "@utils": path.resolve(__dirname, "src/utils"),
+      };
+    }
     return config;
   },
 };
