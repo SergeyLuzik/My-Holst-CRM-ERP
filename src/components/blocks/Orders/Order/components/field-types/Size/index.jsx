@@ -3,6 +3,7 @@ import * as S from "./styles";
 import { Popup } from "@ui-kit/Popup";
 import { Text } from "../../common/Text";
 import { TextInput } from "../../common/TextInput";
+import { SizeOptions } from "./SizeOptions";
 import { searchTextMatch } from "@utils";
 
 const SIZES = {
@@ -93,13 +94,11 @@ export const Size = ({ size }) => {
             handleModeChange={handleModeChange}
           />
           <Popup top={top} left={left}>
-            <S.List>
-              {searchTextMatch(text, SIZES.allSizes).map((size) => (
-                <S.Item key={size}>
-                  <Text onClick={() => handleOptionClick(size)}>{size}</Text>
-                </S.Item>
-              ))}
-            </S.List>
+            <SizeOptions
+              text={text}
+              sizes={SIZES}
+              handleOptionClick={handleOptionClick}
+            />
           </Popup>
         </>
       ) : (
