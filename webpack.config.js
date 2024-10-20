@@ -38,7 +38,13 @@ export default {
   resolve: {
     extensions: [".jsx", ".js"],
     alias: {
-      src: path.resolve(__dirname, "../src"),
+      "@icons": path.resolve(__dirname, "src/assets/icons"),
+      "@ui-kit": path.resolve(__dirname, "src/components/ui-kit"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@mocks": path.resolve(__dirname, "src/mocks"),
+      "@style-fragments": path.resolve(__dirname, "src/style-fragments"),
+      "@styled-tags": path.resolve(__dirname, "src/styled-tags"),
+      "@utils": path.resolve(__dirname, "src/utils"),
     },
   },
   plugins: [
