@@ -7,6 +7,8 @@ export const List = styled(Ul)`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacings.m};
+  max-height: 300px;
+  overflow-y: auto;
 `;
 
 export const Item = styled(Li)``;
