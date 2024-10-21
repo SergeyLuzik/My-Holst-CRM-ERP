@@ -10,5 +10,8 @@ export const SortButton = styled(Button)`
     width: 16px;
     height: 12px;
     mask: url(${sort});
+    ${({ $mode }) => {
+      if ($mode === "fromSmall") return `transform: scale(1, -1);`;
+    }};
   }
 `;
