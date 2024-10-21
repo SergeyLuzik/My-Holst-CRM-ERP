@@ -10,6 +10,6 @@ export const OrientationButton = styled(Button)`
   &::before {
     width: 16px;
     height: 16px;
-    mask: url(${portrait});
+    mask: url(${({ $mode }) => ($mode === "portrait" ? portrait : landscape)});
   }
 `;
