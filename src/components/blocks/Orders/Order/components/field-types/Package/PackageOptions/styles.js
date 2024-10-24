@@ -21,7 +21,7 @@ export const Item = styled(Li)``;
 
 export const Package = styled(Text)`
   justify-content: flex-start;
-  gap: ${({ theme }) => theme.spacings.xs};
+  gap: ${({ theme }) => theme.spacings.s};
   &::before {
     display: block;
     content: "";
