@@ -16,6 +16,7 @@ import { Status } from "./components/field-types/Status";
 import { Description } from "./components/field-types/Description";
 import { Style } from "./components/field-types/Style";
 import { Size } from "./components/field-types/Size";
+import { Package } from "./components/field-types/Package";
 
 export const Order = ({ order }) => (
   <S.Order>
@@ -31,7 +32,9 @@ export const Order = ({ order }) => (
     <OrderItem width="432px">
       <Description description={order.description} />
     </OrderItem>
-    <OrderItem width="170px">{"ШИР ТЕМНО-ЖЕЛТАЯ"}</OrderItem>
+    <OrderItem width="170px">
+      <Package {...order.package} />
+    </OrderItem>
     <Tags>
       <Tag type="time" text="15:00" />
       <Tag type="important" text="Багет 3222" />
