@@ -6,7 +6,7 @@ export const orders = [
     size: "100x100",
     style: "Сканирование",
     description: "Свадебная пара и мама, на фоне буквы, декарация с цветами",
-    package: "ШИР ТЕМНО-ЖЕЛТАЯ",
+    package: { type: "узк", name: "желтая" },
     tags: [
       { type: "time", text: "15:00" },
       { type: "important", text: "Багет 3222" },
