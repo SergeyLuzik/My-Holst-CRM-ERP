@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Li, Ul } from "@styled-tags";
+import { Li, Ul, P } from "@styled-tags";
 import { pill } from "@style-fragments/pill";
 import { Text } from "../../../common/Text";
 
@@ -8,6 +8,26 @@ export const Wrapper = styled.div`
   flex-direction: column;
   gap: ${({ theme }) => theme.spacings.m};
 `;
+export const InputsGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.spacings.s};
+`;
+
+export const InputsWrapper = styled.div`
+  display: flex;
+  gap: ${({ theme }) => theme.spacings.m};
+`;
+
+export const GroupTitle = styled(P)`
+  font-size: 12px;
+  font-weight: ${({ theme }) => theme.fontWeights.regular};
+  color: ${({ theme }) => theme.colors.main};
+`;
+
+export const RadioButton = styled.input``;
+
+export const Checkbox = styled.input``;
 
 export const List = styled(Ul)`
   display: flex;
