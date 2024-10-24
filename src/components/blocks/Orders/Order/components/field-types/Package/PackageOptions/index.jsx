@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as S from "./styles";
 import { searchTextMatch } from "@utils/searchTextMatch";
 import { flipSizes } from "@utils/flipSizes";
+import { Checkbox } from "@ui-kit/Checkbox";
 
 const PACKAGES = [
   {
@@ -101,6 +102,7 @@ export const PackageOptions = ({ text, handleOptionClick }) => {
 
   return (
     <S.Wrapper>
+      <Checkbox checked text={"УЗК"} />
       <S.List>
         {searchTextMatch(text, packages, "name").map(({ name, color }) => (
           <S.Item key={name}>
