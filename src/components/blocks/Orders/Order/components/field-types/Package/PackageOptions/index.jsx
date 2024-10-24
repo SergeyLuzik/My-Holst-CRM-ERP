@@ -102,7 +102,7 @@ export const PackageOptions = ({ text, handleOptionClick }) => {
   return (
     <S.Wrapper>
       <S.List>
-        {searchTextMatch(text, packages).map(({ name, color }) => (
+        {searchTextMatch(text, packages, "name").map(({ name, color }) => (
           <S.Item key={name}>
             <S.Package $color={color} onClick={() => handleOptionClick(name)}>
               {name.toUpperCase()}
