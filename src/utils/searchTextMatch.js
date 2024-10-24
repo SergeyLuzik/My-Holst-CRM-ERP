@@ -1,7 +1,8 @@
-export const searchTextMatch = (text, arr) => {
+export const searchTextMatch = (text, arr, searchField) => {
   const regexp = new RegExp(text, "yi");
+
   return arr.filter((value) => {
     regexp.lastIndex = 0;
-    return regexp.test(value);
+    return regexp.test(searchField ? value[searchField] : value);
   });
 };
