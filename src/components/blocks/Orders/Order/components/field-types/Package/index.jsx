@@ -34,7 +34,7 @@ export const Package = ({ type, name }) => {
   const handleOptionClick = (value) => {
     console.log("клик по опции");
     setEditMode(false);
-    setText(value);
+    setText(value.toUpperCase());
   };
 
   return (
